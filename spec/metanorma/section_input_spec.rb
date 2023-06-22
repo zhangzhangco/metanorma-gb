@@ -1,10 +1,10 @@
 require "spec_helper"
 
-RSpec.describe Asciidoctor::Gb do
+RSpec.describe Metanorma::Gb do
   it "processes sections" do
     expect(xmlpp(strip_guid(Asciidoctor.convert(<<~"INPUT", backend: :gb, header_footer: true)))).to be_equivalent_to xmlpp(<<~"OUTPUT")
       #{ASCIIDOC_BLANK_HDR}
-      
+
       .Foreword
 
       Text
@@ -65,14 +65,14 @@ RSpec.describe Asciidoctor::Gb do
   <title>Acknowledgements</title>
 </acknowledgements>
 </preface><sections>
-     
+
        <clause id="_" obligation="normative" type="scope" inline-header='false' >
          <title>Scope</title>
          <p id="_">Text</p>
        </clause>
-     
+
        <terms id="_" obligation="normative">
-         <title>Terms and definitions</title><p id="_">For the purposes of this document, 
+         <title>Terms and definitions</title><p id="_">For the purposes of this document,
     the following terms and definitions apply.</p>
 <p id="_">ISO and IEC maintain terminological databases for use in
 standardization at the following addresses:</p>
@@ -122,7 +122,7 @@ standardization at the following addresses:</p>
        <clause id="_" inline-header="false" obligation="normative">
          <title>Clause 4.2</title>
        </clause></clause>
-     
+
        </sections><annex id="_" inline-header="false" obligation="normative"><title>Annex</title><clause id="_" inline-header="false" obligation="normative">
          <title>Annex A.1</title>
        </clause>

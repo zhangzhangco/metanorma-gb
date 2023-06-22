@@ -1,0 +1,10 @@
+
+// If no obligation value is set, the annex is presumed to be normative
+[[annex-2]]
+[appendix,obligation="informative"]
+== 附录 B
+
+[format="csv",options="header"]
+|===
+include::../data/codes.csv[]
+|===

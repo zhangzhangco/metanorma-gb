@@ -6,12 +6,33 @@ require "fileutils"
 module IsoDoc
   module Gb
     module BaseConvert
-      def scss_fontheader
+=begin new
+      def scss_fontheader(is_html_css)
+        b = options[:bodyfont] || "Arial"
+        h = options[:headerfont] || "Arial"
+        m = options[:monospacefont] || "Courier New"
+        ns = options[:normalfontsize] || (is_html_css ? "1.0em" : "12.0pt")
+        ms = options[:monospacefontsize] || (is_html_css ? "0.8em" : "11.0pt")
+        ss = options[:smallerfontsize] || (is_html_css ? "0.9em" : "10.0pt")
+        fs = options[:footnotefontsize] || (is_html_css ? "0.9em" : "9.0pt")
+        "$bodyfont: #{b};\n$headerfont: #{h};\n$monospacefont: #{m};\n"\
+          "$normalfontsize: #{ns};\n$monospacefontsize: #{ms};\n"\
+          "$smallerfontsize: #{ss};\n$footnotefontsize: #{fs};\n"
+      end
+=end
+
+      def scss_fontheader(is_html_css)
         b = options[:bodyfont] || "Arial"
         h = options[:headerfont] || "Arial"
         m = options[:monospacefont] || "Courier New"
         t = options[:titlefont] || "Arial"
+        ns = options[:normalfontsize] || (is_html_css ? "1.0em" : "12.0pt")
+        ms = options[:monospacefontsize] || (is_html_css ? "0.8em" : "11.0pt")
+        ss = options[:smallerfontsize] || (is_html_css ? "0.9em" : "10.0pt")
+        fs = options[:footnotefontsize] || (is_html_css ? "0.9em" : "9.0pt")
         "$bodyfont: #{b};\n$headerfont: #{h};\n$monospacefont: #{m};\n"\
+          "$normalfontsize: #{ns};\n$monospacefontsize: #{ms};\n"\
+          "$smallerfontsize: #{ss};\n$footnotefontsize: #{fs};\n"\
           "$titlefont: #{t};\n"
       end
 
@@ -106,13 +127,39 @@ module IsoDoc
       end
 
       def middle(isoxml, out)
-        super
-        end_line(isoxml, out)
+        middle_title(isoxml, out)
+        middle_admonitions(isoxml, out)
+        i = scope isoxml, out, 0
+        i = norm_ref isoxml, out, i
+        clause_etc isoxml, out, i
+        annex isoxml, out
+        bibliography isoxml, out
       end
 
-      def end_line(_isoxml, out)
-        out.hr **{ width: "25%" }
+      def clause_etc(isoxml, out, num)
+        isoxml.xpath(ns("//sections/clause[not(@type = 'scope')] | " \
+                        "//sections/terms | //sections/definitions"))
+          .each do |f|
+            clause_etc1(f, out, num)
+          end
       end
+
+      def clause_etc1(clause, out, num)
+        out.div **attr_code(
+          id: clause["id"],
+          class: clause.name == "definitions" ? "Symbols" : nil,
+        ) do |div|
+          num = num + 1
+          clause_name(clause, clause&.at(ns("./title")), div, nil)
+          clause.elements.each do |e|
+            parse(e, div) unless %w{title source}.include? e.name
+          end
+        end
+      end
+
+      # def end_line(_isoxml, out)
+      #   out.hr **{ width: "25%" }
+      # end
 
       def error_parse(node, out)
         # catch elements not defined in ISO
@@ -159,7 +206,7 @@ module IsoDoc
         end.join
       end
 
-      def clausedelimspace(out)
+      def clausedelimspace(node, out)
         out << "&#x3000;"
       end
 

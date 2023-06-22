@@ -1,4 +1,4 @@
-module Asciidoctor
+module Metanorma
   module Gb
     class Converter < ISO::Converter
       def termdef_cleanup(xmldoc)

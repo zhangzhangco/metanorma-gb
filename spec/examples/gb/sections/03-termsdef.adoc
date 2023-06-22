@@ -1,0 +1,62 @@
+== 术语和定义
+
+下列术语和定义适用于本文件。
+
+=== 数字电影LED影厅　digital LED cinema
+
+采用数字电影技术，使用LED显示屏放映电影的影厅。
+
+=== LED显示屏　LED display screen
+
+以LED像素显示文字、图像及视频等信息的装置，通常包括LED屏体及显示控制系统等基本组成成分，也可包括辅助系统等，可采用一体式或分体式结构。
+
+[.source]
+<<SJT11141—2017,clause="3.1">>
+
+=== 像素　pixel
+
+LED显示屏的最小成像单元。
+注：通常由红色、绿色、蓝色发光二极管组成，每个发光二极管可视为亚像素。
+
+[.source]
+<<SJT11141—2017,clause="3.6">>
+
+
+=== 电光转换函数　electro-optic transfer function
+
+显示设备的输入编码值与光输出之间的函数关系。
+
+=== 立体放映消光比　stereoscopic extinction ratio
+
+左眼（右眼）图像亮度对串扰光和环境光的抗扰能力。
+
+NOTE: 左眼（右眼）图像亮度与串扰光和环境光的比，用：1方式表示。
+
+== 缩略语
+
+下列缩略语适用于本文件。
+
+IMB 集成媒体模块（Integrated Media Block）
+
+HDR 高动态范围（High Dynamic Range）
+
+LED 发光二极管（Light-Emitting Diode）
+
+SDR 标准动态范围（Standard Dynamic Range）
+
+// === script
+
+// particular graphic representation or class of representations of a set of characters used to write one or more languages
+
+// [.source]
+// <<ISO5127,clause="3.1.6.02">>
+
+
+// [[term-code]]
+// === code
+
+// data representation in different forms according to a pre-established set of rules
+
+// [.source]
+// <<ISO639-2>>
+

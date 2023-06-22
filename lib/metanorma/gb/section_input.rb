@@ -1,23 +1,22 @@
 require "relaton_gb"
+require "metanorma"
+require "metanorma/iso/converter"
 
-module Asciidoctor
+module Metanorma
   module Gb
 
     # A {Converter} implementation that generates GB output, and a document
     # schema encapsulation of the document for validation
-    class Converter < ISO::Converter
+    class Converter < ::Metanorma::ISO::Converter
       def sectiontype_streamline(ret)
         case ret
         when "前言" then "foreword"
-        when "致謝" then "acknowledgements"
         when "引言" then "introduction"
         when "范围" then "scope"
         when "规范性引用文件" then "normative references"
-        when "术语和定义", "术语、定义、符号、代号和缩略语"
-          "terms and definitions"
-        when "符号、代号和缩略语" then "symbols and abbreviated terms"
+        when "术语和定义" then "terms and definitions"
+        when "符号和缩略语" then "symbols and abbreviated terms"
         when "参考文献" then "bibliography"
-        when "致谢" then "acknowledgements"
         else
           super
         end

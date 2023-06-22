@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../metanorma-cli"
+		},
+		{
+			"path": "../metanorma-iso"
+		},
+		{
+			"path": "../isodoc"
+		},
+		{
+			"path": "../metanorma-standoc"
+		},
+		{
+			"path": "../html2doc"
+		}
+	],
+	"settings": {}
+}

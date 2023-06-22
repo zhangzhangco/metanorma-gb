@@ -1,0 +1,182 @@
+
+[[Technicalrequirements]]
+== 技术要求
+
+数字电影LED影厅技术要求应符合<<表1>>的规定。
+
+[[表1]]
+.数字电影LED影厅技术要求
+|===
+| *序号* | *参数* 4+| *要求* | *测量方法*
+
+.4+| 1 .4+a| 中心亮度(cd/m^2^)| 目标 ^a^ | 标准值 a| 审片室| 影院
+
+.4+| 见<<Centreluminance>>
+
+| A | 48,0 | ±3,5 | ±10,2
+| B | 24,0 | ±1,8 | ±5,1
+| C | 15,5 | ±1,1 | ±3,3
+| 2 | luminance difference ratio 4+| shall not be more than 5 % | 见 <<Luminancedifferenceratio>>
+| 3 | side luminance uniformity 4+a| (should be): 75 % to 90 % of centre luminance | 见 <<Sideluminanceuniformity>>
+| 4 | centre white chromaticity 4+a| (should be): _x_ = 0,314 ± 0,006, _y_ = 0,351 ± 0,006 | 见 <<Centrewhitechromaticity>>
+7+.<| ^a^   Filmmakers can prepare content that is optimized for any or each of the targets, and such content should always be clearly identified as to the intended playback luminance.
+|===
+
+[[Testmethods]]
+== 测量方法
+
+[[Measuringequipments]]
+=== 测量设备
+
+[[Spectroradiometer]]
+==== 亮度计
+
+The spectroradiometer shall comply with the requirements specified in <<GYT311_2017, clause 4.5>>.
+
+[[Photometer]]
+==== Photometer
+
+Screen luminance shall be measured with a spot photometer having the spectral luminance response of the standard observer (photopic vision), as defined in <<SJT11141_2017>>. The acceptance angle of the photometer shall be 2° or less. The lower limit of the measuring range shall be 0,01 cd/m^2^ or better. The photometer response to luminance variation over time shall be to properly integrate any such variation occurring at frequencies at or above 24 Hz and display the arithmetic mean value.
+
+[[Signalofmeasurement]]
+=== Signal of measurement
+
+[[Whitefieldsignal]]
+==== White field signal
+
+The digital code values of the white field signal is (_X_'=3 794, _Y_'=3 960, _Z_'=3 890).
+
+[[Measurementconditionsandmeasurementrequirements]]
+=== Measurement conditions and measurement requirements
+
+Measurement conditions shall meet the following requirements.
+
+[loweralpha]
+. All equipment shall be in normal operating status.
+
+. Measurement shall be carried out after the light output of the digital projector stabilizes. Digital projector shall project white field signal through the stereoscopic equipment for 15 min.
+
+. The light of the digital projector shall pass through the stereoscopic projection equipment.
+
+. When measuring through the stereoscopic glasses they shall be placed in a horizontal state, as a viewer would wear them. No tilt from the horizontal axis is allowed.
+
+. All signals shall be output to the digital projector by Media Block. The measurement shall cover all valid screen images.
+
+. Measurement location in the auditorium shall comply with the requirements specified in <<SJT11141_2017, clause 4.3>>.
+
+. Measurement locations on the screen of Luminance, difference shall comply with the requirements specified in <<SJT11141_2017, clause 4.2>>.
+
+. For using dual stereoscopic cinema screenings, both of the digital projectors shall also be turned on and working normally.
+
+. The measurement of the optical system of stereoscopic projection should be carried out within the range of the white colour chromaticity coordinates of the centre of the screen.
+
+[[Themeasurementoftheopticalsystemofstereoscopicprojection]]
+=== The measurement of the optical system of stereoscopic projection
+
+[[Centreluminance]]
+==== Centre luminance
+Measurement procedures.
+[loweralpha]
+. Open the photometer and make it work normally.
+
+. Set the digital projector as the stereoscopic projection mode and use the stereoscopic projection equipment.
+
+. The white field signal is simultaneously displayed in the left and right eyes.
+
+. Using the photometer to measure and record the left-eye white field centre luminance, stem:[L_(lw)], and the right-eye white field centre luminance, stem:[L_(rw)], through the left-eye lens and the right-eye lens of the stereo glasses.
+
+. Calculate and record the centre luminance, stem:[L], according to <<formula-1>>:
++
+--
+[[formula-1, 1]]
+[stem]
+++++
+L=frac(L_(lw)+L_(rw))(2)
+++++
+
+where
+
+stem:[L]:: is the centre luminance;
+stem:[L_(lw)]:: is the centre luminance of the white field of the left-eye when the left and right eyes simultaneously display the white field signal;
+stem:[L_(rw)]:: is the centre luminance of the white field of the right-eye when the left and right eyes simultaneously display the white field signal.
+--
+
+[[Luminancedifferenceratio]]
+==== Luminance difference ratio
+Measurement procedures.
+[loweralpha]
+. Refer to the measurement method of centre luminance, record the left-eye white field centre luminance stem:[L_(lw)] and the right-eye white field centre luminance stem:[L_(lw)].
+
+. Calculate and record the luminance difference ratio stem:[L_(d)] according to <<formula-2>>:
++
+--
+[[formula-2, 2]]
+[stem]
+++++
+L_(d)=frac(|L_(lw)-L_(rw)|)(((L_(lw)+L_(rw)))//2) × 100 %
+++++
+
+where
+
+stem:[L_(d)]:: is the luminance difference ratio;
+stem:[L_(lw)]:: is the centre luminance of the white field of the left-eye when the left and right eyes simultaneously display the white field signal;
+stem:[L_(rw)]:: is the centre luminance of the white field of the right-eye when the left and right eyes simultaneously display the white field signal.
+--
+
+[[Sideluminanceuniformity]]
+==== Side luminance uniformity
+
+Measurement procedures.
+[loweralpha]
+. Open the photometer and make it work normally.
+
+. Set the digital projector as the stereoscopic projection mode and use the stereoscopic projection equipment.
+
+. The white field signal is simultaneously displayed in the left and right eyes.
+
+. Measure the luminance, stem:[L_(lw)], of white field in the centre of screen and the luminance, stem:[L_(ls)], of white field of four sides by using photometer through stereoscopic glasses of left-eye.
+
+. Measure the luminance, stem:[L_(rw)], of white field in the centre of screen and the luminance, stem:[L_(ls)], of white field of four sides by using photometer through stereoscopic glasses of right-eye.
+
+. Calculate and record the side luminance uniformity, stem:[U_(l)] of the upper, lower, left and right edges of the white field of the left-eye according to <<formula-3>>:
++
+--
+[[formula-3, 3]]
+[stem]
+++++
+U_(l)=frac(L_(ls))(L_(lw)) × 100 %
+++++
+
+where
+
+stem:[U_(l)]:: is the left-eye side luminance uniformity;
+stem:[L_(lw)]:: is the centre luminance of the white field of the left-eye when the left and right eyes simultaneously display the white field signal;
+stem:[L_(ls)]:: is the left-eye luminance of white field of four sides when the left and right eyes simultaneously display the white field signal.
+--
+. calculate and record the side luminance uniformity stem:[U_(r)] of the upper, lower, left and right sides of the white field of the right-eye according to <<formula-4>>:
++
+--
+[[formula-4, 4]]
+[stem]
+++++
+U_(r)=frac(L_(rs))(L_(rw)) × 100 %
+++++
+
+where
+
+stem:[U_(r)]:: is the right-eye side luminance uniformity;
+stem:[L_(rw)]:: is the centre luminance of the white field of the right-eye when the left and right eyes simultaneously display the white field signal;
+stem:[L_(rs)]:: is the right-eye luminance of white field of four sides when the left and right eyes simultaneously display the white field signal.
+--
+
+[[Centrewhitechromaticity]]
+==== Centre white chromaticity
+Measurement procedures.
+[loweralpha]
+. Open the spectroradiometer and make it work normally.
+
+. Set the digital projector as the stereoscopic projection mode and use the stereoscopic projection equipment.
+
+. The white field signal is simultaneously displayed in the left and right eyes.
+
+. Using the spectroradiometer to measure and record the centre white chromaticity through the left-eye lens and the right-eye lens of the stereo glasses.

@@ -24,7 +24,11 @@ module IsoDoc
           headerfont: (script == "Hans" ? '"SimHei",sans-serif' : '"Calibri",sans-serif'),
           monospacefont: '"Courier New",monospace',
           titlefont: (scope == "national" ? (script != "Hans" ? '"Cambria",serif' : '"SimSun",serif' ) :
-                      (script == "Hans" ? '"SimHei",sans-serif' : '"Calibri",sans-serif' ))
+                      (script == "Hans" ? '"SimHei",sans-serif' : '"Calibri",sans-serif' )),
+          normalfontsize: "1.0em",
+          smallerfontsize: "0.9em",
+          footnotefontsize: "0.9em",
+          monospacefontsize: "0.8em",
         }
       end
 

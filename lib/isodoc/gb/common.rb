@@ -61,7 +61,7 @@ module IsoDoc
         local = local_logo_suffix(scope)
         return "<img class='logo' width='113' height='56' src='#{@standardlogoimg}' alt='#{prefix}'></img>"\
           "#{local}" if  @standardlogoimg
-        logo += ".gif"
+        logo += ".png"
         #FileUtils.cp fileloc(File.join('html/gb-logos', logo)), logo
         #@files_to_delete << logo
         "<img class='logo' width='113' height='56' src='#{fileloc(File.join('html/gb-logos', logo))}' alt='#{prefix}'></img>"\

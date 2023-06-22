@@ -1,0 +1,1447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gb-standard xmlns="https://www.metanorma.org/ns/gb" type="presentation" version="1.5.8" schema-version="v1.2.2">
+<bibdata type="standard">
+<title language="en" format="plain" type="main">Digital cinema — LED screen — Technical requirements and test methods</title>
+
+<title language="en" format="plain" type="title-intro">Digital cinema</title>
+
+<title language="en" format="plain" type="title-main">LED screen</title>
+
+<title language="en" format="plain" type="title-part">Technical requirements and test methods</title>
+
+<title language="zh" format="plain" type="main">数字电影 — LED影厅 — 技术要求和测量方法</title>
+
+<title language="zh" format="plain" type="title-intro">数字电影</title>
+
+<title language="zh" format="plain" type="title-main">LED影厅</title>
+
+<title language="zh" format="plain" type="title-part">技术要求和测量方法</title>
+<docidentifier type="gb">GB/T 66666</docidentifier><docnumber>66666</docnumber><date type="published"><on>2023-10-14</on></date><date type="circulated"><on>2018-10-04</on></date><contributor><role type="author"/><organization>
+<name>GB</name>
+</organization></contributor><contributor><role type="technical-committee"/><organization><name>电影</name></organization></contributor><contributor><role type="publisher"/><organization>
+<name>GB</name>
+</organization></contributor><contributor><role type="authority"/><organization>
+<name>GB</name>
+</organization></contributor><contributor><role type="proposer"/><organization>
+<name>GB</name>
+</organization></contributor><contributor><role type="issuer"/><organization>
+<name>中华人民共和国国家质量监督检验检疫总局 中国国家标准化管理委员会</name>
+</organization></contributor><version><revision-date>2023-05-01</revision-date></version><language current="true">zh</language><script current="true">Hans</script><status><stage abbreviation="FCD">40</stage><substage>00</substage></status><copyright><from>2023</from><owner><organization>
+<name>中华人民共和国国家质量监督检验检疫总局 中国国家标准化管理委员会</name>
+</organization></owner></copyright><ext><doctype>recommendation</doctype><gbcommittee type="TC">电影</gbcommittee><ics><code>11.060</code><text>Dentistry</text></ics><structuredidentifier><project-number>GB/T 66666</project-number></structuredidentifier><stagename>标准草案送审稿</stagename><gbtype><gbscope>national</gbscope><gbprefix>GB</gbprefix><gbmandate>recommended</gbmandate><gbtopic>basic</gbtopic></gbtype></ext></bibdata><localized-strings><localized-string key="term_def_boilerplate" language="zh"><p>ISO和IEC用于标准化的术语数据库地址如下：</p>
+<ul>
+<li> <p>ISO在线浏览平台:
+  位于<link target="https://www.iso.org/obp"/></p></li>
+<li> <p>IEC Electropedia:
+  位于<link target="https://www.electropedia.org"/>
+</p> </li> </ul>
+</localized-string><localized-string key="scope" language="zh">范围</localized-string><localized-string key="symbolsabbrev" language="zh">符号、代号和缩略语</localized-string><localized-string key="abbrev" language="zh">代号和缩略语</localized-string><localized-string key="symbols" language="zh">符号</localized-string><localized-string key="table_of_contents" language="zh">目次</localized-string><localized-string key="introduction" language="zh">引言</localized-string><localized-string key="foreword" language="zh">前言</localized-string><localized-string key="abstract" language="zh">摘要</localized-string><localized-string key="acknowledgements" language="zh">致謝</localized-string><localized-string key="termsdef" language="zh">术语和定义</localized-string><localized-string key="termsdefsymbolsabbrev" language="zh">术语、定义、符号、代号和缩略语</localized-string><localized-string key="termsdefsymbols" language="zh">术语、定义、符号和代号</localized-string><localized-string key="termsdefabbrev" language="zh">术语、定义、符号和缩略语</localized-string><localized-string key="normref" language="zh">规范性引用文件</localized-string><localized-string key="bibliography" language="zh">参考文献</localized-string><localized-string key="preface" language="zh">序言</localized-string><localized-string key="clause" language="zh">条</localized-string><localized-string key="annex" language="zh">附件</localized-string><localized-string key="appendix" language="zh">附录</localized-string><localized-string key="no_terms_boilerplate" language="zh"><p>本文件不提供术语和定义。</p>
+</localized-string><localized-string key="internal_terms_boilerplate" language="zh"><p>下列术语和定义适用于本文件。</p>
+</localized-string><localized-string key="norm_with_refs_pref" language="zh">下列文件对于本文件的应用是必不可少的。 凡是注日期的引用文件，仅注日期的版本适用于本文件。 凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。</localized-string><localized-string key="norm_empty_pref" language="zh">本文件并没有规范性引用文件。</localized-string><localized-string key="external_terms_boilerplate" language="zh"><p>% 界定的术语和定义适用于本文件。</p>
+</localized-string><localized-string key="internal_external_terms_boilerplate" language="zh"><p>% 界定的以及下列术语和定义适用于本文件。</p>
+</localized-string><localized-string key="term_defined_in" language="zh">〖术语于%中定义〗</localized-string><localized-string key="binary_and" language="zh">%1和%2</localized-string><localized-string key="multiple_and" language="zh">%1、和%2</localized-string><localized-string key="binary_or" language="zh">%1或%2</localized-string><localized-string key="multiple_or" language="zh">%1、或%2</localized-string><localized-string key="chain_and" language="zh">%1和%2</localized-string><localized-string key="chain_or" language="zh">%1或%2</localized-string><localized-string key="chain_from" language="zh">%1从%2</localized-string><localized-string key="chain_to" language="zh">%1到%2</localized-string><localized-string key="nested_xref" language="zh">%1, %2</localized-string><localized-string key="list_nested_xref" language="zh">%1 %2</localized-string><localized-string key="SpelloutRules" language="zh">spellout-ordinal</localized-string><localized-string key="note" language="zh">注</localized-string><localized-string key="note_xref" language="zh">注</localized-string><localized-string key="termnote" language="zh">注%</localized-string><localized-string key="figure" language="zh">图</localized-string><localized-string key="diagram" language="zh">图表</localized-string><localized-string key="formula" language="zh">公式</localized-string><localized-string key="inequality" language="zh">公式</localized-string><localized-string key="list" language="zh">列项</localized-string><localized-string key="deflist" language="zh">定义列表</localized-string><localized-string key="table" language="zh">表</localized-string><localized-string key="requirement" language="zh">要求</localized-string><localized-string key="recommendation" language="zh">建议</localized-string><localized-string key="permission" language="zh">容許</localized-string><localized-string key="box" language="zh">专栏</localized-string><localized-string key="key" language="zh">说明</localized-string><localized-string key="example" language="zh">示例</localized-string><localized-string key="example_xref" language="zh">示例</localized-string><localized-string key="where" language="zh">式中</localized-string><localized-string key="where_one" language="zh">式中</localized-string><localized-string key="wholeoftext" language="zh">全部</localized-string><localized-string key="draft_label" language="zh">稿</localized-string><localized-string key="inform_annex" language="zh">资料性附录</localized-string><localized-string key="norm_annex" language="zh">规范性附录</localized-string><localized-string key="modified" language="zh">改写</localized-string><localized-string key="deprecated" language="zh">被取代</localized-string><localized-string key="source" language="zh">定义</localized-string><localized-string key="and" language="zh">和</localized-string><localized-string key="all_parts" language="zh">所有部分</localized-string><localized-string key="edition_ordinal" language="zh">第%Spellout版</localized-string><localized-string key="edition" language="zh">版</localized-string><localized-string key="version" language="zh">版本</localized-string><localized-string key="toc_figures" language="zh">数字列表</localized-string><localized-string key="toc_tables" language="zh">表列表</localized-string><localized-string key="toc_recommendations" language="zh">建议清单</localized-string><localized-string key="month_january" language="zh">一月</localized-string><localized-string key="month_february" language="zh">二月</localized-string><localized-string key="month_march" language="zh">三月</localized-string><localized-string key="month_april" language="zh">四月</localized-string><localized-string key="month_may" language="zh">五月</localized-string><localized-string key="month_june" language="zh">六月</localized-string><localized-string key="month_july" language="zh">七月</localized-string><localized-string key="month_august" language="zh">八月</localized-string><localized-string key="month_september" language="zh">九月</localized-string><localized-string key="month_october" language="zh">十月</localized-string><localized-string key="month_november" language="zh">十一月</localized-string><localized-string key="month_december" language="zh">十二月</localized-string><localized-string key="obligation" language="zh">义务</localized-string><localized-string key="admonition.danger" language="zh">危险</localized-string><localized-string key="admonition.warning" language="zh">警告</localized-string><localized-string key="admonition.caution" language="zh">注意</localized-string><localized-string key="admonition.important" language="zh">重要</localized-string><localized-string key="admonition.safety_precautions" language="zh">安全须知</localized-string><localized-string key="admonition.editorial" language="zh">编辑说明</localized-string><localized-string key="locality.section" language="zh">条</localized-string><localized-string key="locality.clause" language="zh">条</localized-string><localized-string key="locality.part" language="zh">部分</localized-string><localized-string key="locality.paragraph" language="zh">段</localized-string><localized-string key="locality.chapter" language="zh">章</localized-string><localized-string key="locality.page" language="zh">页</localized-string><localized-string key="locality.table" language="zh">表</localized-string><localized-string key="locality.annex" language="zh">附录</localized-string><localized-string key="locality.figure" language="zh">图</localized-string><localized-string key="locality.example" language="zh">示例</localized-string><localized-string key="locality.note" language="zh">注</localized-string><localized-string key="locality.appendix" language="zh">附录</localized-string><localized-string key="grammar_abbrevs.masculine" language="zh">男性性别</localized-string><localized-string key="grammar_abbrevs.feminine" language="zh">阴性</localized-string><localized-string key="grammar_abbrevs.neuter" language="zh">中性的</localized-string><localized-string key="grammar_abbrevs.common" language="zh">通性</localized-string><localized-string key="grammar_abbrevs.singular" language="zh">单数</localized-string><localized-string key="grammar_abbrevs.dual" language="zh">双</localized-string><localized-string key="grammar_abbrevs.plural" language="zh">复数</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="zh">介词</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="zh">分词</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="zh">形容词</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="zh">副词</localized-string><localized-string key="grammar_abbrevs.isNoun" language="zh">名词</localized-string><localized-string key="grammar_abbrevs.isVerb" language="zh">动词</localized-string><localized-string key="relatedterms.deprecates" language="zh">旧词</localized-string><localized-string key="relatedterms.supersedes" language="zh">取替</localized-string><localized-string key="relatedterms.narrower" language="zh">狭义</localized-string><localized-string key="relatedterms.broader" language="zh">广义</localized-string><localized-string key="relatedterms.equivalent" language="zh">同义</localized-string><localized-string key="relatedterms.compare" language="zh">比较</localized-string><localized-string key="relatedterms.contrast" language="zh">对比</localized-string><localized-string key="relatedterms.see" language="zh">见</localized-string><localized-string key="relatedterms.seealso" language="zh">参见</localized-string><localized-string key="all_rights_reserved" language="zh">版权所有</localized-string><localized-string key="reference_number" language="zh">参考编号</localized-string><localized-string key="price_based_on" language="zh">价格基于%页</localized-string><localized-string key="under_preparation" language="zh">制定中（出版时最新状态为%）</localized-string><localized-string key="withdrawn" language="zh">撤回 .</localized-string><localized-string key="cancelled_and_replaced" language="zh">已取消并由%取代。</localized-string><localized-string key="date" language="zh">日期</localized-string><localized-string key="index" language="zh">索引</localized-string><localized-string key="see" language="zh">见</localized-string><localized-string key="see_also" language="zh">另见</localized-string><localized-string key="secretariat" language="zh">秘书处</localized-string><localized-string key="termsrelated" language="zh">相关术语</localized-string><localized-string key="availablefrom" language="zh">可从</localized-string><localized-string key="doctype_dict.international-standard" language="zh">国际标准</localized-string><localized-string key="doctype_dict.technical-specification" language="zh">技术规格</localized-string><localized-string key="doctype_dict.technical-report" language="zh">技术报告</localized-string><localized-string key="doctype_dict.publicly-available-specification" language="zh">公开可用的规范</localized-string><localized-string key="doctype_dict.international-workshop-agreement" language="zh">国际研讨会协议</localized-string><localized-string key="doctype_dict.guide" language="zh">指南</localized-string><localized-string key="doctype_dict.amendment" language="zh">修正</localized-string><localized-string key="doctype_dict.technical-corrigendum" language="zh">技术勘误</localized-string><localized-string key="doctype_dict.directive" language="zh">指令</localized-string><localized-string key="stage_dict.00" language="zh">初步工作项</localized-string><localized-string key="stage_dict.10" language="zh">新工作项提案</localized-string><localized-string key="stage_dict.20" language="zh">工作草案</localized-string><localized-string key="stage_dict.30" language="zh">委员会草案</localized-string><localized-string key="40.international-standard" language="zh">国际标准草稿</localized-string><localized-string key="40.technical-specification" language="zh">技术规格草稿</localized-string><localized-string key="40.technical-report" language="zh">技术报告草稿</localized-string><localized-string key="40.publicly-available-specification" language="zh">公开可用的规范草稿</localized-string><localized-string key="40.international-workshop-agreement" language="zh">国际研讨会协议草稿</localized-string><localized-string key="40.guide" language="zh">指南草稿</localized-string><localized-string key="40.amendment" language="zh">修正草稿</localized-string><localized-string key="40.technical-corrigendum" language="zh">技术勘误草稿</localized-string><localized-string key="40.directive" language="zh">指令草稿</localized-string><localized-string key="50.international-standard" language="zh">国际标准最终草案</localized-string><localized-string key="50.technical-specification" language="zh">技术规格最终草案</localized-string><localized-string key="50.technical-report" language="zh">技术报告最终草案</localized-string><localized-string key="50.publicly-available-specification" language="zh">公开可用的规范最终草案</localized-string><localized-string key="50.international-workshop-agreement" language="zh">国际研讨会协议最终草案</localized-string><localized-string key="50.guide" language="zh">指南最终草案</localized-string><localized-string key="50.amendment" language="zh">修正最终草案</localized-string><localized-string key="50.technical-corrigendum" language="zh">技术勘误最终草案</localized-string><localized-string key="50.directive" language="zh">指令最终草案</localized-string><localized-string key="60.international-standard" language="zh">国际标准</localized-string><localized-string key="60.technical-specification" language="zh">技术规格</localized-string><localized-string key="60.technical-report" language="zh">技术报告</localized-string><localized-string key="60.publicly-available-specification" language="zh">公开可用的规范</localized-string><localized-string key="60.international-workshop-agreement" language="zh">国际研讨会协议</localized-string><localized-string key="60.guide" language="zh">指南</localized-string><localized-string key="60.amendment" language="zh">修正</localized-string><localized-string key="60.technical-corrigendum" language="zh">技术勘误</localized-string><localized-string key="60.directive" language="zh">指令</localized-string><localized-string key="stage_dict.90" language="zh">回顾</localized-string><localized-string key="stage_dict.95" language="zh">提款</localized-string><localized-string key="modspec.provision" language="zh">条件</localized-string><localized-string key="publicationdate_lbl" language="zh">发布</localized-string><localized-string key="implementationdate_lbl" language="zh">实施</localized-string><localized-string key="supercedes_lbl" language="zh">代替</localized-string><localized-string key="partly_supercedes_lbl" language="zh">部分代替</localized-string><localized-string key="completion_date" language="zh">本稿完成日期：</localized-string><localized-string key="PRC" language="zh">中华人民共和国</localized-string><localized-string key="industry_standard" language="zh">行业标准</localized-string><localized-string key="local_standard" language="zh">地方标准</localized-string><localized-string key="local_issuer" language="zh">质量技术检测局</localized-string><localized-string key="enterprise_standard" language="zh">企业标准</localized-string><localized-string key="social_standard" language="zh">团体标准</localized-string><localized-string key="language" language="zh">zh</localized-string><localized-string key="script" language="zh">Hans</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>3</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>3</value></presentation-metadata><metanorma><source><semantic__gb-standard type="semantic" version="1.5.8" schema-version="v1.2.2">
+<semantic__bibdata type="standard">
+<semantic__title language="en" format="plain" type="main">Digital cinema — LED screen — Technical requirements and test methods</semantic__title>
+
+<semantic__title language="en" format="plain" type="title-intro">Digital cinema</semantic__title>
+
+<semantic__title language="en" format="plain" type="title-main">LED screen</semantic__title>
+
+<semantic__title language="en" format="plain" type="title-part">Technical requirements and test methods</semantic__title>
+
+<semantic__title language="zh" format="plain" type="main">数字电影 — LED影厅 — 技术要求和测量方法</semantic__title>
+
+<semantic__title language="zh" format="plain" type="title-intro">数字电影</semantic__title>
+
+<semantic__title language="zh" format="plain" type="title-main">LED影厅</semantic__title>
+
+<semantic__title language="zh" format="plain" type="title-part">技术要求和测量方法</semantic__title>
+<semantic__docidentifier type="gb">GB/T 66666</semantic__docidentifier><semantic__docnumber>66666</semantic__docnumber><semantic__date type="published"><semantic__on>2023-10-14</semantic__on></semantic__date><semantic__date type="circulated"><semantic__on>2018-10-04</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
+<semantic__name>GB</semantic__name>
+</semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="technical-committee"/><semantic__organization><semantic__name>电影</semantic__name></semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="publisher"/><semantic__organization>
+<semantic__name>GB</semantic__name>
+</semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="authority"/><semantic__organization>
+<semantic__name>GB</semantic__name>
+</semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="proposer"/><semantic__organization>
+<semantic__name>GB</semantic__name>
+</semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="issuer"/><semantic__organization>
+<semantic__name>中华人民共和国国家质量监督检验检疫总局 中国国家标准化管理委员会</semantic__name>
+</semantic__organization></semantic__contributor><semantic__version><semantic__revision-date>2023-05-01</semantic__revision-date></semantic__version><semantic__language>zh</semantic__language><semantic__script>Hans</semantic__script><semantic__status><semantic__stage abbreviation="FCD">40</semantic__stage><semantic__substage>00</semantic__substage></semantic__status><semantic__copyright><semantic__from>2023</semantic__from><semantic__owner><semantic__organization>
+<semantic__name>中华人民共和国国家质量监督检验检疫总局 中国国家标准化管理委员会</semantic__name>
+</semantic__organization></semantic__owner></semantic__copyright><semantic__ext><semantic__doctype>recommendation</semantic__doctype><semantic__gbcommittee type="TC">电影</semantic__gbcommittee><semantic__ics><semantic__code>11.060</semantic__code><semantic__text>Dentistry</semantic__text></semantic__ics><semantic__structuredidentifier><semantic__project-number>GB/T 66666</semantic__project-number></semantic__structuredidentifier><semantic__stagename>标准草案送审稿</semantic__stagename><semantic__gbtype><semantic__gbscope>national</semantic__gbscope><semantic__gbprefix>GB</semantic__gbprefix><semantic__gbmandate>recommended</semantic__gbmandate><semantic__gbtopic>basic</semantic__gbtopic></semantic__gbtype></semantic__ext></semantic__bibdata><semantic__metanorma-extension><semantic__presentation-metadata><semantic__name>TOC Heading Levels</semantic__name><semantic__value>3</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>HTML TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>DOC TOC Heading Levels</semantic__name><semantic__value>3</semantic__value></semantic__presentation-metadata></semantic__metanorma-extension>
+<semantic__boilerplate>
+  
+</semantic__boilerplate>
+<semantic__preface><semantic__foreword id="semantic___41cc1c7c-bbd4-fe21-46b4-85bdae6aa99b" obligation="informative">
+<semantic__title>前言</semantic__title>
+<semantic__p id="semantic___9e8a68db-ca01-00ff-0d54-3210645403ef">本文件按照GB/T 1.1—2020《标准化工作导则  第1部分：标准化文件的结构和起草规则》的规定起草。</semantic__p>
+
+<semantic__p id="semantic___88520217-c421-0f4e-242a-c1e137ac8387">请注意本文件的某些内容可能涉及专利。本文件的发布机构不承担识别这些专利的责任。</semantic__p>
+
+<semantic__p id="semantic___bfd1da50-5afd-c50a-0496-cbd3ca010f3b">本文件由国家电影局归口。</semantic__p>
+
+<semantic__p id="semantic___e7a53b80-9e91-683b-3216-e631ef093ccc">本文件起草单位：中国电影科学技术研究所（中央宣传部电影技术质量检测所）、深圳市时代华影科技股份有限公司、深圳市洲明科技股份有限公司、中影光峰激光影院技术（北京）有限公司、利亚德光电股份有限公司。</semantic__p>
+
+<semantic__p id="semantic___c2ac1b68-d920-f5d1-bbe6-5ec2ae0ea373">本文件主要起草人：李娜、董强国、刘知一、张伟、龚波、高五峰、高峰、高峰、张辉、王景宇、贾波、周永业、董志刚、张鹏昊、张硕。</semantic__p>
+</semantic__foreword><semantic__introduction id="semantic__introduction" obligation="informative">
+<semantic__title>引言</semantic__title>
+<semantic__p id="semantic___5c88c1f0-9e6d-b9c7-27a3-1b1fef396aa0">无。</semantic__p>
+</semantic__introduction></semantic__preface><semantic__sections>
+
+<semantic__clause id="semantic_____x8303___x56f4_" type="scope" inline-header="false" obligation="normative">
+<semantic__title>范围</semantic__title>
+<semantic__p id="semantic___b3d64391-51ff-99eb-533b-313ce7174180">本文件规定了数字电影LED影厅的技术要求及相应的测量方法。</semantic__p>
+
+<semantic__p id="semantic___e569b2b2-5f70-920b-a5dd-343df2eaa587">本文件适用于数字电影LED影厅的运行维护、检测认证、质量监督、技术管理和相关设备的安装、调试、验收和维护。</semantic__p>
+</semantic__clause>
+
+
+
+<semantic__terms id="semantic_____x672f___x8bed___x548c___x5b9a___x4e49_" obligation="normative">
+<semantic__title>术语和定义</semantic__title><semantic__p id="semantic___06844bb1-36f7-a933-7230-9a244a6f6950">下列术语和定义适用于本文件。</semantic__p>
+<semantic__p id="semantic___557a6fef-40da-4ea3-fdd5-813f2a305787">ISO和IEC用于标准化的术语数据库地址如下：</semantic__p>
+<semantic__ul id="semantic___c15691da-c050-cfe0-d1bc-87e5354ae8bc">
+<semantic__li> <semantic__p id="semantic___e0ba54cd-1672-88db-e588-46bcc9400b61">ISO在线浏览平台:
+  位于<semantic__link target="https://www.iso.org/obp"/></semantic__p></semantic__li>
+<semantic__li> <semantic__p id="semantic___54dee543-0f2b-09d1-33b0-fce2dbd216c7">IEC Electropedia:
+  位于<semantic__link target="https://www.electropedia.org"/>
+</semantic__p> </semantic__li> </semantic__ul>
+
+<semantic__p id="semantic___77434159-de6d-31a3-211b-3cf25731d9b2">下列术语和定义适用于本文件。</semantic__p>
+
+<semantic__term id="semantic__term-__x6570___x5b57___x7535___x5f71_LED__x5f71___x5385_-digital-LED-cinema"><semantic__preferred language="zh"><semantic__expression><semantic__name>数字电影影厅　</semantic__name></semantic__expression></semantic__preferred> <semantic__preferred language="en"><semantic__expression><semantic__name>LED　digital LED cinema</semantic__name></semantic__expression></semantic__preferred>
+<semantic__definition><semantic__verbal-definition><semantic__p id="semantic___3bef1b6c-37f8-b240-a2d0-8f0c0f18c6f4">采用数字电影技术，使用LED显示屏放映电影的影厅。</semantic__p></semantic__verbal-definition></semantic__definition>
+ </semantic__term>
+
+<semantic__term id="semantic__term-LED__x663e___x793a___x5c4f_-LED-display-screen"><semantic__preferred language="zh"><semantic__expression><semantic__name>显示屏　</semantic__name></semantic__expression></semantic__preferred> <semantic__preferred language="en"><semantic__expression><semantic__name>LED　LED display screen</semantic__name></semantic__expression></semantic__preferred>
+<semantic__definition><semantic__verbal-definition><semantic__p id="semantic___a3ac42b8-c22b-cbae-0cc4-87fc1e1ef670">以LED像素显示文字、图像及视频等信息的装置，通常包括LED屏体及显示控制系统等基本组成成分，也可包括辅助系统等，可采用一体式或分体式结构。</semantic__p></semantic__verbal-definition></semantic__definition>
+
+
+ <semantic__termsource status="identical" type="authoritative"><semantic__origin bibitemid="semantic__SJT11141—2017" type="inline" citeas=""><semantic__localityStack><semantic__locality type="clause"><semantic__referenceFrom>3.1</semantic__referenceFrom></semantic__locality></semantic__localityStack></semantic__origin>
+</semantic__termsource></semantic__term>
+
+<semantic__term id="semantic__term-__x50cf___x7d20_-pixel"><semantic__preferred language="zh"><semantic__expression><semantic__name>像素　</semantic__name></semantic__expression></semantic__preferred> <semantic__preferred language="en"><semantic__expression><semantic__name>　pixel</semantic__name></semantic__expression></semantic__preferred>
+<semantic__definition><semantic__verbal-definition><semantic__p id="semantic___cf61d35d-25dd-330b-95ea-e46be4f87481">LED显示屏的最小成像单元。
+注：通常由红色、绿色、蓝色发光二极管组成，每个发光二极管可视为亚像素。</semantic__p></semantic__verbal-definition></semantic__definition>
+
+
+ <semantic__termsource status="identical" type="authoritative"><semantic__origin bibitemid="semantic__SJT11141—2017" type="inline" citeas=""><semantic__localityStack><semantic__locality type="clause"><semantic__referenceFrom>3.6</semantic__referenceFrom></semantic__locality></semantic__localityStack></semantic__origin>
+</semantic__termsource></semantic__term>
+
+<semantic__term id="semantic__term-__x7535___x5149___x8f6c___x6362___x51fd___x6570_-electro-optic-transfer-function"><semantic__preferred language="zh"><semantic__expression><semantic__name>电光转换函数　-</semantic__name></semantic__expression></semantic__preferred> <semantic__preferred language="en"><semantic__expression><semantic__name>　electro-optic transfer function</semantic__name></semantic__expression></semantic__preferred>
+<semantic__definition><semantic__verbal-definition><semantic__p id="semantic___e2ec9257-6ab2-b2fb-88ac-394ccf7136d6">显示设备的输入编码值与光输出之间的函数关系。</semantic__p></semantic__verbal-definition></semantic__definition>
+ </semantic__term>
+
+<semantic__term id="semantic__term-__x7acb___x4f53___x653e___x6620___x6d88___x5149___x6bd4_-stereoscopic-extinction-ratio"><semantic__preferred language="zh"><semantic__expression><semantic__name>立体放映消光比　</semantic__name></semantic__expression></semantic__preferred> <semantic__preferred language="en"><semantic__expression><semantic__name>　stereoscopic extinction ratio</semantic__name></semantic__expression></semantic__preferred>
+<semantic__definition><semantic__verbal-definition><semantic__p id="semantic___3e3da9b9-2f19-377b-45b6-59cfe64d27ba">左眼（右眼）图像亮度对串扰光和环境光的抗扰能力。</semantic__p></semantic__verbal-definition></semantic__definition>
+
+
+ <semantic__termnote id="semantic___60e14032-c99e-3bd2-d0e3-e062f25c3101"><semantic__p id="semantic___6a6a31ea-e8d7-9091-e0bc-356581c16c3b">左眼（右眼）图像亮度与串扰光和环境光的比，用：1方式表示。</semantic__p>
+</semantic__termnote></semantic__term>
+</semantic__terms>
+
+<semantic__clause id="semantic_____x7f29___x7565___x8bed_" inline-header="false" obligation="normative">
+<semantic__title>缩略语</semantic__title>
+<semantic__p id="semantic___0278b140-7a7a-5517-dcea-87bb2645f5e9">下列缩略语适用于本文件。</semantic__p>
+
+<semantic__p id="semantic___92077d51-f3f4-c6eb-cae0-ce10afb2261c">IMB 集成媒体模块（Integrated Media Block）</semantic__p>
+
+<semantic__p id="semantic___a8e47979-6503-8a84-2a31-9a1161d8e86f">HDR 高动态范围（High Dynamic Range）</semantic__p>
+
+<semantic__p id="semantic___ebed9b55-ed20-c604-a54c-364cd3aa7667">LED 发光二极管（Light-Emitting Diode）</semantic__p>
+
+<semantic__p id="semantic___71208ed5-f5c1-c557-da73-a02e865d1de0">SDR 标准动态范围（Standard Dynamic Range）</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic__Technicalrequirements" inline-header="false" obligation="normative">
+<semantic__title>技术要求</semantic__title>
+<semantic__p id="semantic___d59ea8ec-28ab-9d33-7f37-ca9bf708614b">数字电影LED影厅技术要求应符合<semantic__xref target="semantic____x8868_1" style="short"/>的规定。</semantic__p>
+
+<semantic__table id="semantic____x8868_1">
+<semantic__name>数字电影LED影厅技术要求</semantic__name>
+<semantic__thead><semantic__tr><semantic__th valign="top" align="left"><semantic__strong>序号</semantic__strong></semantic__th>
+<semantic__th valign="top" align="left"><semantic__strong>参数</semantic__strong></semantic__th>
+<semantic__th colspan="4" valign="top" align="left"><semantic__strong>要求</semantic__strong></semantic__th>
+<semantic__th valign="top" align="left"><semantic__strong>测量方法</semantic__strong></semantic__th>
+</semantic__tr></semantic__thead>
+<semantic__tbody><semantic__tr><semantic__td valign="top" rowspan="4" align="left">1</semantic__td>
+<semantic__td valign="top" rowspan="4" align="left"><semantic__p id="semantic___49db1f26-ec6b-3e2d-579e-e2a6d8a0bd28">中心亮度(cd/m<semantic__sup>2</semantic__sup>)</semantic__p>
+</semantic__td>
+<semantic__td valign="top" align="left">目标 <semantic__sup>a</semantic__sup></semantic__td>
+<semantic__td valign="top" align="left">标准值</semantic__td>
+<semantic__td valign="top" align="left"><semantic__p id="semantic___d0a509ee-f334-40c0-8fe4-b01ac2594852">审片室</semantic__p>
+</semantic__td>
+<semantic__td valign="top" align="left">影院</semantic__td>
+<semantic__td valign="top" rowspan="4" align="left">见<semantic__xref target="semantic__Centreluminance" style="short"/></semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="top" align="left">A</semantic__td>
+<semantic__td valign="top" align="left">48,0</semantic__td>
+<semantic__td valign="top" align="left">±3,5</semantic__td>
+<semantic__td valign="top" align="left">±10,2</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="top" align="left">B</semantic__td>
+<semantic__td valign="top" align="left">24,0</semantic__td>
+<semantic__td valign="top" align="left">±1,8</semantic__td>
+<semantic__td valign="top" align="left">±5,1</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="top" align="left">C</semantic__td>
+<semantic__td valign="top" align="left">15,5</semantic__td>
+<semantic__td valign="top" align="left">±1,1</semantic__td>
+<semantic__td valign="top" align="left">±3,3</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="top" align="left">2</semantic__td>
+<semantic__td valign="top" align="left">luminance difference ratio</semantic__td>
+<semantic__td colspan="4" valign="top" align="left">shall not be more than 5 %</semantic__td>
+<semantic__td valign="top" align="left">见 <semantic__xref target="semantic__Luminancedifferenceratio" style="short"/></semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="top" align="left">3</semantic__td>
+<semantic__td valign="top" align="left">side luminance uniformity</semantic__td>
+<semantic__td colspan="4" valign="top" align="left"><semantic__p id="semantic___afcdca54-7ec0-f98a-f654-d81525a6d46e">(should be): 75 % to 90 % of centre luminance</semantic__p>
+</semantic__td>
+<semantic__td valign="top" align="left">见 <semantic__xref target="semantic__Sideluminanceuniformity" style="short"/></semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="top" align="left">4</semantic__td>
+<semantic__td valign="top" align="left">centre white chromaticity</semantic__td>
+<semantic__td colspan="4" valign="top" align="left"><semantic__p id="semantic___d62a1042-5441-eff2-c7c6-f70f572d181f">(should be): <semantic__em>x</semantic__em> = 0,314 ± 0,006, <semantic__em>y</semantic__em> = 0,351 ± 0,006</semantic__p>
+</semantic__td>
+<semantic__td valign="top" align="left">见 <semantic__xref target="semantic__Centrewhitechromaticity" style="short"/></semantic__td>
+</semantic__tr><semantic__tr><semantic__td colspan="7" valign="top" align="left"><semantic__sup>a</semantic__sup>   Filmmakers can prepare content that is optimized for any or each of the targets, and such content should always be clearly identified as to the intended playback luminance.</semantic__td>
+</semantic__tr></semantic__tbody>
+</semantic__table>
+</semantic__clause>
+
+<semantic__clause id="semantic__Testmethods" inline-header="false" obligation="normative">
+<semantic__title>测量方法</semantic__title>
+<semantic__clause id="semantic__Measuringequipments" inline-header="false" obligation="normative">
+<semantic__title>测量设备</semantic__title>
+<semantic__clause id="semantic__Spectroradiometer" inline-header="false" obligation="normative">
+<semantic__title>亮度计</semantic__title>
+<semantic__p id="semantic___9027ca41-be6a-e701-636f-2668fa070b12">The spectroradiometer shall comply with the requirements specified in <semantic__eref type="inline" style="short" bibitemid="semantic__GYT311_2017" citeas="GY/T 311—2017"><semantic__localityStack><semantic__locality type="clause"><semantic__referenceFrom>4.5</semantic__referenceFrom></semantic__locality></semantic__localityStack></semantic__eref>.</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic__Photometer" inline-header="false" obligation="normative">
+<semantic__title>Photometer</semantic__title>
+<semantic__p id="semantic___b9055177-27d5-0bd8-a26c-bec0b391098b">Screen luminance shall be measured with a spot photometer having the spectral luminance response of the standard observer (photopic vision), as defined in <semantic__eref type="inline" style="short" bibitemid="semantic__SJT11141_2017" citeas="SJ/T 11141—2017"/>. The acceptance angle of the photometer shall be 2° or less. The lower limit of the measuring range shall be 0,01 cd/m<semantic__sup>2</semantic__sup> or better. The photometer response to luminance variation over time shall be to properly integrate any such variation occurring at frequencies at or above 24 Hz and display the arithmetic mean value.</semantic__p>
+</semantic__clause>
+</semantic__clause>
+
+<semantic__clause id="semantic__Signalofmeasurement" inline-header="false" obligation="normative">
+<semantic__title>Signal of measurement</semantic__title>
+<semantic__clause id="semantic__Whitefieldsignal" inline-header="false" obligation="normative">
+<semantic__title>White field signal</semantic__title>
+<semantic__p id="semantic___fdf143fc-73ff-a9e4-7fa5-29def29fde77">The digital code values of the white field signal is (<semantic__em>X</semantic__em>‘=3 794, <semantic__em>Y</semantic__em>‘=3 960, <semantic__em>Z</semantic__em>‘=3 890).</semantic__p>
+</semantic__clause>
+</semantic__clause>
+
+<semantic__clause id="semantic__Measurementconditionsandmeasurementrequirements" inline-header="false" obligation="normative">
+<semantic__title>Measurement conditions and measurement requirements</semantic__title>
+<semantic__p id="semantic___f3eac274-c152-286c-a581-0b04310b3e69">Measurement conditions shall meet the following requirements.</semantic__p>
+
+<semantic__ol id="semantic___a0dd9961-ae16-6667-dcd3-e631ea824d2d"><semantic__li><semantic__p id="semantic___13280d4d-d8a4-4250-1931-725ebefe7651">All equipment shall be in normal operating status.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___066d399d-7e63-6652-90c5-ecd3949013f3">Measurement shall be carried out after the light output of the digital projector stabilizes. Digital projector shall project white field signal through the stereoscopic equipment for 15 min.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___f3cf09aa-399c-5c5d-0cee-64f1b8140a5c">The light of the digital projector shall pass through the stereoscopic projection equipment.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___7e50935d-48df-ea83-8d54-8d0921e0a04b">When measuring through the stereoscopic glasses they shall be placed in a horizontal state, as a viewer would wear them. No tilt from the horizontal axis is allowed.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___c833e7b4-dfa8-02dc-da80-818f1dbb6f01">All signals shall be output to the digital projector by Media Block. The measurement shall cover all valid screen images.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___e104cae6-2b35-7ee9-b891-22602a83a387">Measurement location in the auditorium shall comply with the requirements specified in <semantic__eref type="inline" style="short" bibitemid="semantic__SJT11141_2017" citeas="SJ/T 11141—2017"><semantic__localityStack><semantic__locality type="clause"><semantic__referenceFrom>4.3</semantic__referenceFrom></semantic__locality></semantic__localityStack></semantic__eref>.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___7803531c-c4af-2bc1-bcb1-d67ea2c9a096">Measurement locations on the screen of Luminance, difference shall comply with the requirements specified in <semantic__eref type="inline" style="short" bibitemid="semantic__SJT11141_2017" citeas="SJ/T 11141—2017"><semantic__localityStack><semantic__locality type="clause"><semantic__referenceFrom>4.2</semantic__referenceFrom></semantic__locality></semantic__localityStack></semantic__eref>.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___2e844514-3265-8e49-c766-5c31edbe7a67">For using dual stereoscopic cinema screenings, both of the digital projectors shall also be turned on and working normally.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___70313980-8e8c-1031-ad83-f5001f9ccd24">The measurement of the optical system of stereoscopic projection should be carried out within the range of the white colour chromaticity coordinates of the centre of the screen.</semantic__p>
+</semantic__li>
+</semantic__ol>
+</semantic__clause>
+
+<semantic__clause id="semantic__Themeasurementoftheopticalsystemofstereoscopicprojection" inline-header="false" obligation="normative">
+<semantic__title>The measurement of the optical system of stereoscopic projection</semantic__title>
+<semantic__clause id="semantic__Centreluminance" inline-header="false" obligation="normative">
+<semantic__title>Centre luminance</semantic__title>
+<semantic__p id="semantic___623d9c96-8fbe-0d32-9ab0-a8e79c807e40">Measurement procedures.</semantic__p>
+
+<semantic__ol id="semantic___4af17697-06ea-97fb-98dd-36ca77dfc2e3"><semantic__li><semantic__p id="semantic___56adc61a-7a8e-8dc7-540b-8ec1ea5a0d0c">Open the photometer and make it work normally.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___3abb91d3-84b0-f6d8-a969-b0f89170049c">Set the digital projector as the stereoscopic projection mode and use the stereoscopic projection equipment.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___95e6daa9-6ec3-a9f1-4c20-064ee130cd8e">The white field signal is simultaneously displayed in the left and right eyes.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___4be99c73-75a2-7cea-8a01-61e3c3841116">Using the photometer to measure and record the left-eye white field centre luminance, <semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>l</semantic__mi>
+        <semantic__mi>w</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(lw)</semantic__asciimath></semantic__stem>, and the right-eye white field centre luminance, <semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>r</semantic__mi>
+        <semantic__mi>w</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(rw)</semantic__asciimath></semantic__stem>, through the left-eye lens and the right-eye lens of the stereo glasses.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___d38388b6-28da-e02c-5774-92924476b016">Calculate and record the centre luminance, <semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__mi>L</semantic__mi>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L</semantic__asciimath></semantic__stem>, according to <semantic__xref target="semantic__formula-1" style="short"/>:</semantic__p>
+<semantic__formula id="semantic__formula-1"><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__mi>L</semantic__mi>
+    <semantic__mo>=</semantic__mo>
+    <semantic__mfrac>
+      <semantic__mrow>
+        <semantic__msub>
+          <semantic__mi>L</semantic__mi>
+          <semantic__mrow>
+            <semantic__mi>l</semantic__mi>
+            <semantic__mi>w</semantic__mi>
+          </semantic__mrow>
+        </semantic__msub>
+        <semantic__mo>+</semantic__mo>
+        <semantic__msub>
+          <semantic__mi>L</semantic__mi>
+          <semantic__mrow>
+            <semantic__mi>r</semantic__mi>
+            <semantic__mi>w</semantic__mi>
+          </semantic__mrow>
+        </semantic__msub>
+      </semantic__mrow>
+      <semantic__mn>2</semantic__mn>
+    </semantic__mfrac>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L=frac(L_(lw)+L_(rw))(2)</semantic__asciimath></semantic__stem><semantic__dl id="semantic___37eb91d1-f3b6-d9de-7176-6d50c3a85262" key="true"><semantic__dt><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__mi>L</semantic__mi>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L</semantic__asciimath></semantic__stem></semantic__dt>
+<semantic__dd><semantic__p id="semantic___81dfb4fd-e74b-26ae-2a46-3f4d2a976c81">is the centre luminance;</semantic__p>
+</semantic__dd>
+<semantic__dt><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>l</semantic__mi>
+        <semantic__mi>w</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(lw)</semantic__asciimath></semantic__stem></semantic__dt>
+<semantic__dd><semantic__p id="semantic___71491340-ef95-11c6-0d9d-ad5ebe9417b0">is the centre luminance of the white field of the left-eye when the left and right eyes simultaneously display the white field signal;</semantic__p>
+</semantic__dd>
+<semantic__dt><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>r</semantic__mi>
+        <semantic__mi>w</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(rw)</semantic__asciimath></semantic__stem></semantic__dt>
+<semantic__dd><semantic__p id="semantic___53665b05-5ef0-c3e8-7f6c-14baa80239de">is the centre luminance of the white field of the right-eye when the left and right eyes simultaneously display the white field signal.</semantic__p>
+</semantic__dd>
+</semantic__dl></semantic__formula>
+
+
+
+
+</semantic__li>
+</semantic__ol>
+</semantic__clause>
+
+<semantic__clause id="semantic__Luminancedifferenceratio" inline-header="false" obligation="normative">
+<semantic__title>Luminance difference ratio</semantic__title>
+<semantic__p id="semantic___d4bacee4-27e4-f8b1-11b1-1ff30cc9d4cd">Measurement procedures.</semantic__p>
+
+<semantic__ol id="semantic___d3c37682-ad43-6ed6-995e-9763af40fcd5"><semantic__li><semantic__p id="semantic___b02ab655-8ad7-2fbf-86d2-4fa123c4b424">Refer to the measurement method of centre luminance, record the left-eye white field centre luminance <semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>l</semantic__mi>
+        <semantic__mi>w</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(lw)</semantic__asciimath></semantic__stem> and the right-eye white field centre luminance <semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>l</semantic__mi>
+        <semantic__mi>w</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(lw)</semantic__asciimath></semantic__stem>.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___28f5f82c-4853-10f8-df42-e020a1b01d26">Calculate and record the luminance difference ratio <semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mi>d</semantic__mi>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(d)</semantic__asciimath></semantic__stem> according to <semantic__xref target="semantic__formula-2" style="short"/>:</semantic__p>
+<semantic__formula id="semantic__formula-2"><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mi>d</semantic__mi>
+    </semantic__msub>
+    <semantic__mo>=</semantic__mo>
+    <semantic__mfrac>
+      <semantic__mrow>
+        <semantic__mo>|</semantic__mo>
+        <semantic__msub>
+          <semantic__mi>L</semantic__mi>
+          <semantic__mrow>
+            <semantic__mi>l</semantic__mi>
+            <semantic__mi>w</semantic__mi>
+          </semantic__mrow>
+        </semantic__msub>
+        <semantic__mo>−</semantic__mo>
+        <semantic__msub>
+          <semantic__mi>L</semantic__mi>
+          <semantic__mrow>
+            <semantic__mi>r</semantic__mi>
+            <semantic__mi>w</semantic__mi>
+          </semantic__mrow>
+        </semantic__msub>
+        <semantic__mo>|</semantic__mo>
+      </semantic__mrow>
+      <semantic__mrow>
+        <semantic__mrow>
+          <semantic__mo>(</semantic__mo>
+          <semantic__mtable>
+            <semantic__mtr>
+              <semantic__mtd>
+                <semantic__msub>
+                  <semantic__mi>L</semantic__mi>
+                  <semantic__mrow>
+                    <semantic__mi>l</semantic__mi>
+                    <semantic__mi>w</semantic__mi>
+                  </semantic__mrow>
+                </semantic__msub>
+                <semantic__mo>+</semantic__mo>
+                <semantic__msub>
+                  <semantic__mi>L</semantic__mi>
+                  <semantic__mrow>
+                    <semantic__mi>r</semantic__mi>
+                    <semantic__mi>w</semantic__mi>
+                  </semantic__mrow>
+                </semantic__msub>
+              </semantic__mtd>
+            </semantic__mtr>
+          </semantic__mtable>
+          <semantic__mo>)</semantic__mo>
+        </semantic__mrow>
+        <semantic__mo>/</semantic__mo>
+        <semantic__mn>2</semantic__mn>
+      </semantic__mrow>
+    </semantic__mfrac>
+    <semantic__mi>×</semantic__mi>
+    <semantic__mn>100</semantic__mn>
+    <semantic__mi>%</semantic__mi>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(d)=frac(|L_(lw)-L_(rw)|)(((L_(lw)+L_(rw)))//2) × 100 %</semantic__asciimath></semantic__stem><semantic__dl id="semantic___6bee26e3-1aeb-9d77-e264-70e62d69d250" key="true"><semantic__dt><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mi>d</semantic__mi>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(d)</semantic__asciimath></semantic__stem></semantic__dt>
+<semantic__dd><semantic__p id="semantic___b4c63468-e6d5-3560-572a-0c186c4a454d">is the luminance difference ratio;</semantic__p>
+</semantic__dd>
+<semantic__dt><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>l</semantic__mi>
+        <semantic__mi>w</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(lw)</semantic__asciimath></semantic__stem></semantic__dt>
+<semantic__dd><semantic__p id="semantic___8bea204e-4f18-ea07-8eac-d10492d62df7">is the centre luminance of the white field of the left-eye when the left and right eyes simultaneously display the white field signal;</semantic__p>
+</semantic__dd>
+<semantic__dt><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>r</semantic__mi>
+        <semantic__mi>w</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(rw)</semantic__asciimath></semantic__stem></semantic__dt>
+<semantic__dd><semantic__p id="semantic___e02cbff7-c0bf-b178-89ee-1d5534233a4c">is the centre luminance of the white field of the right-eye when the left and right eyes simultaneously display the white field signal.</semantic__p>
+</semantic__dd>
+</semantic__dl></semantic__formula>
+
+
+
+
+</semantic__li>
+</semantic__ol>
+</semantic__clause>
+
+<semantic__clause id="semantic__Sideluminanceuniformity" inline-header="false" obligation="normative">
+<semantic__title>Side luminance uniformity</semantic__title>
+<semantic__p id="semantic___543b876b-e478-378e-94d6-48b91657d931">Measurement procedures.</semantic__p>
+
+<semantic__ol id="semantic___e6ce6e04-759f-8dde-9ce5-06802d157694"><semantic__li><semantic__p id="semantic___83aa2f2d-77cd-16f3-61d2-122cab3233b9">Open the photometer and make it work normally.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___a0d5cf98-edc6-6cf2-a228-dbd4ef4e816f">Set the digital projector as the stereoscopic projection mode and use the stereoscopic projection equipment.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___427d58ae-9c71-2ec7-19eb-26096ccc1ea1">The white field signal is simultaneously displayed in the left and right eyes.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___10d89f6e-b697-622d-5f2c-eabca121a3c9">Measure the luminance, <semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>l</semantic__mi>
+        <semantic__mi>w</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(lw)</semantic__asciimath></semantic__stem>, of white field in the centre of screen and the luminance, <semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>l</semantic__mi>
+        <semantic__mi>s</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(ls)</semantic__asciimath></semantic__stem>, of white field of four sides by using photometer through stereoscopic glasses of left-eye.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___195bff0e-4b0c-45a9-faa2-e9ea74549e3c">Measure the luminance, <semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>r</semantic__mi>
+        <semantic__mi>w</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(rw)</semantic__asciimath></semantic__stem>, of white field in the centre of screen and the luminance, <semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>l</semantic__mi>
+        <semantic__mi>s</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(ls)</semantic__asciimath></semantic__stem>, of white field of four sides by using photometer through stereoscopic glasses of right-eye.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___4ddeb820-2186-66cf-87e5-012ede208a00">Calculate and record the side luminance uniformity, <semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>U</semantic__mi>
+      <semantic__mi>l</semantic__mi>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>U_(l)</semantic__asciimath></semantic__stem> of the upper, lower, left and right edges of the white field of the left-eye according to <semantic__xref target="semantic__formula-3" style="short"/>:</semantic__p>
+<semantic__formula id="semantic__formula-3"><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>U</semantic__mi>
+      <semantic__mi>l</semantic__mi>
+    </semantic__msub>
+    <semantic__mo>=</semantic__mo>
+    <semantic__mfrac>
+      <semantic__msub>
+        <semantic__mi>L</semantic__mi>
+        <semantic__mrow>
+          <semantic__mi>l</semantic__mi>
+          <semantic__mi>s</semantic__mi>
+        </semantic__mrow>
+      </semantic__msub>
+      <semantic__msub>
+        <semantic__mi>L</semantic__mi>
+        <semantic__mrow>
+          <semantic__mi>l</semantic__mi>
+          <semantic__mi>w</semantic__mi>
+        </semantic__mrow>
+      </semantic__msub>
+    </semantic__mfrac>
+    <semantic__mi>×</semantic__mi>
+    <semantic__mn>100</semantic__mn>
+    <semantic__mi>%</semantic__mi>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>U_(l)=frac(L_(ls))(L_(lw)) × 100 %</semantic__asciimath></semantic__stem><semantic__dl id="semantic___f68fac50-d9ad-56ab-3519-ee6159458fbb" key="true"><semantic__dt><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>U</semantic__mi>
+      <semantic__mi>l</semantic__mi>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>U_(l)</semantic__asciimath></semantic__stem></semantic__dt>
+<semantic__dd><semantic__p id="semantic___6d475f43-e033-2996-c177-e70bfa17b6bb">is the left-eye side luminance uniformity;</semantic__p>
+</semantic__dd>
+<semantic__dt><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>l</semantic__mi>
+        <semantic__mi>w</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(lw)</semantic__asciimath></semantic__stem></semantic__dt>
+<semantic__dd><semantic__p id="semantic___fca4acb5-d0ef-ec63-4e36-f5a20f7818aa">is the centre luminance of the white field of the left-eye when the left and right eyes simultaneously display the white field signal;</semantic__p>
+</semantic__dd>
+<semantic__dt><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>l</semantic__mi>
+        <semantic__mi>s</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(ls)</semantic__asciimath></semantic__stem></semantic__dt>
+<semantic__dd><semantic__p id="semantic___44ab0a1c-e4eb-f3ea-cd20-db053822cbbf">is the left-eye luminance of white field of four sides when the left and right eyes simultaneously display the white field signal.</semantic__p>
+</semantic__dd>
+</semantic__dl></semantic__formula>
+
+
+
+
+</semantic__li>
+<semantic__li><semantic__p id="semantic___1b9514a4-c390-dfd9-96e5-ffd4403a222c">calculate and record the side luminance uniformity <semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>U</semantic__mi>
+      <semantic__mi>r</semantic__mi>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>U_(r)</semantic__asciimath></semantic__stem> of the upper, lower, left and right sides of the white field of the right-eye according to <semantic__xref target="semantic__formula-4" style="short"/>:</semantic__p>
+<semantic__formula id="semantic__formula-4"><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>U</semantic__mi>
+      <semantic__mi>r</semantic__mi>
+    </semantic__msub>
+    <semantic__mo>=</semantic__mo>
+    <semantic__mfrac>
+      <semantic__msub>
+        <semantic__mi>L</semantic__mi>
+        <semantic__mrow>
+          <semantic__mi>r</semantic__mi>
+          <semantic__mi>s</semantic__mi>
+        </semantic__mrow>
+      </semantic__msub>
+      <semantic__msub>
+        <semantic__mi>L</semantic__mi>
+        <semantic__mrow>
+          <semantic__mi>r</semantic__mi>
+          <semantic__mi>w</semantic__mi>
+        </semantic__mrow>
+      </semantic__msub>
+    </semantic__mfrac>
+    <semantic__mi>×</semantic__mi>
+    <semantic__mn>100</semantic__mn>
+    <semantic__mi>%</semantic__mi>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>U_(r)=frac(L_(rs))(L_(rw)) × 100 %</semantic__asciimath></semantic__stem><semantic__dl id="semantic___57b4a82c-4b02-9c15-58be-ff888d88f408" key="true"><semantic__dt><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>U</semantic__mi>
+      <semantic__mi>r</semantic__mi>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>U_(r)</semantic__asciimath></semantic__stem></semantic__dt>
+<semantic__dd><semantic__p id="semantic___09309127-d192-255a-731b-a01d3ba65a99">is the right-eye side luminance uniformity;</semantic__p>
+</semantic__dd>
+<semantic__dt><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>r</semantic__mi>
+        <semantic__mi>w</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(rw)</semantic__asciimath></semantic__stem></semantic__dt>
+<semantic__dd><semantic__p id="semantic___2f478dcc-9448-4554-fe50-c15ea1673eee">is the centre luminance of the white field of the right-eye when the left and right eyes simultaneously display the white field signal;</semantic__p>
+</semantic__dd>
+<semantic__dt><semantic__stem type="MathML"><semantic__math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantic__mstyle displaystyle="true">
+    <semantic__msub>
+      <semantic__mi>L</semantic__mi>
+      <semantic__mrow>
+        <semantic__mi>r</semantic__mi>
+        <semantic__mi>s</semantic__mi>
+      </semantic__mrow>
+    </semantic__msub>
+  </semantic__mstyle>
+</semantic__math><semantic__asciimath>L_(rs)</semantic__asciimath></semantic__stem></semantic__dt>
+<semantic__dd><semantic__p id="semantic___b545f032-b2d0-761a-f3ab-4365522f75c3">is the right-eye luminance of white field of four sides when the left and right eyes simultaneously display the white field signal.</semantic__p>
+</semantic__dd>
+</semantic__dl></semantic__formula>
+
+
+
+
+</semantic__li>
+</semantic__ol>
+</semantic__clause>
+
+<semantic__clause id="semantic__Centrewhitechromaticity" inline-header="false" obligation="normative">
+<semantic__title>Centre white chromaticity</semantic__title>
+<semantic__p id="semantic___68a6dd62-5bb5-b79b-59a5-51f0afab1670">Measurement procedures.</semantic__p>
+
+<semantic__ol id="semantic___61d9d6d7-c2ea-169c-519f-30482029f231"><semantic__li><semantic__p id="semantic___45db5b9c-f87b-2de9-375c-0326bdafddfa">Open the spectroradiometer and make it work normally.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___ba711c64-39ce-9c2d-cb66-15697a56b590">Set the digital projector as the stereoscopic projection mode and use the stereoscopic projection equipment.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___62902019-f664-5607-9a55-f9539a9eec75">The white field signal is simultaneously displayed in the left and right eyes.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___40e1d637-3eca-2fbb-1624-69b2a2b2bae1">Using the spectroradiometer to measure and record the centre white chromaticity through the left-eye lens and the right-eye lens of the stereo glasses.</semantic__p>
+</semantic__li>
+</semantic__ol>
+</semantic__clause>
+</semantic__clause>
+</semantic__clause>
+</semantic__sections><semantic__bibliography><semantic__references id="semantic_____x89c4___x8303___x6027___x5f15___x7528___x6587___x4ef6_" normative="true" obligation="informative">
+<semantic__title>规范性引用文件</semantic__title><semantic__p id="semantic___f490f9b5-7983-008c-52df-66f9022845a5">下列文件对于本文件的应用是必不可少的。 凡是注日期的引用文件，仅注日期的版本适用于本文件。 凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。</semantic__p>
+
+
+<semantic__bibitem id="semantic__GYT311_2017"><semantic__formattedref format="application/x-isodoc+xml">　电影院视听环境技术要求和测量方法</semantic__formattedref><semantic__docidentifier>GY/T 311—2017</semantic__docidentifier><semantic__docnumber>311—2017</semantic__docnumber></semantic__bibitem>
+<semantic__bibitem id="semantic__GYT312_2017"><semantic__formattedref format="application/x-isodoc+xml">　电影　录音控制室、室内影厅B环电声响应规范和测量</semantic__formattedref><semantic__docidentifier>GY/T 312—2017</semantic__docidentifier><semantic__docnumber>312—2017</semantic__docnumber></semantic__bibitem>
+<semantic__bibitem id="semantic__SJT11141_2017"><semantic__formattedref format="application/x-isodoc+xml">　发光二极管（LED）显示屏通用规范</semantic__formattedref><semantic__docidentifier>SJ/T 11141—2017</semantic__docidentifier><semantic__docnumber>11141—2017</semantic__docnumber></semantic__bibitem>
+</semantic__references></semantic__bibliography>
+</semantic__gb-standard></source></metanorma><source-highlighter-css>sourcecode table td { padding: 5px; }
+sourcecode table pre { margin: 0; }
+sourcecode, sourcecode .w {
+  color: #444444;
+}
+sourcecode .cp {
+  color: #CC00A3;
+}
+sourcecode .cs {
+  color: #CC00A3;
+}
+sourcecode .c, sourcecode .ch, sourcecode .cd, sourcecode .cm, sourcecode .cpf, sourcecode .c1 {
+  color: #FF0000;
+}
+sourcecode .kc {
+  color: #C34E00;
+}
+sourcecode .kd {
+  color: #0000FF;
+}
+sourcecode .kr {
+  color: #007575;
+}
+sourcecode .k, sourcecode .kn, sourcecode .kp, sourcecode .kt, sourcecode .kv {
+  color: #0000FF;
+}
+sourcecode .s, sourcecode .sb, sourcecode .sc, sourcecode .ld, sourcecode .sd, sourcecode .s2, sourcecode .se, sourcecode .sh, sourcecode .si, sourcecode .sx, sourcecode .sr, sourcecode .s1, sourcecode .ss {
+  color: #009C00;
+}
+sourcecode .sa {
+  color: #0000FF;
+}
+sourcecode .nb, sourcecode .bp {
+  color: #C34E00;
+}
+sourcecode .nt {
+  color: #0000FF;
+}
+
+</source-highlighter-css></metanorma-extension>
+<boilerplate>
+  
+</boilerplate>
+<preface><clause type="toc" id="_daeb7643-0d30-47cd-b5f7-5a6ca29c9bee" displayorder="1"><title depth="1">目　次</title></clause>
+<foreword id="_41cc1c7c-bbd4-fe21-46b4-85bdae6aa99b" obligation="informative" displayorder="2">
+<title>前　言</title>
+<p id="_9e8a68db-ca01-00ff-0d54-3210645403ef">本文件按照GB/T 1.1—2020《标准化工作导则  第1部分：标准化文件的结构和起草规则》的规定起草。</p>
+
+<p id="_88520217-c421-0f4e-242a-c1e137ac8387">请注意本文件的某些内容可能涉及专利。本文件的发布机构不承担识别这些专利的责任。</p>
+
+<p id="_bfd1da50-5afd-c50a-0496-cbd3ca010f3b">本文件由国家电影局归口。</p>
+
+<p id="_e7a53b80-9e91-683b-3216-e631ef093ccc">本文件起草单位：中国电影科学技术研究所（中央宣传部电影技术质量检测所）、深圳市时代华影科技股份有限公司、深圳市洲明科技股份有限公司、中影光峰激光影院技术（北京）有限公司、利亚德光电股份有限公司。</p>
+
+<p id="_c2ac1b68-d920-f5d1-bbe6-5ec2ae0ea373">本文件主要起草人：李娜、董强国、刘知一、张伟、龚波、高五峰、高峰、高峰、张辉、王景宇、贾波、周永业、董志刚、张鹏昊、张硕。</p>
+</foreword><introduction id="introduction" obligation="informative" displayorder="3">
+<title>引　言</title>
+<p id="_5c88c1f0-9e6d-b9c7-27a3-1b1fef396aa0">无。</p>
+</introduction></preface><sections>
+
+<clause id="___x8303___x56f4_" type="scope" inline-header="false" obligation="normative" displayorder="4">
+<title depth="1">1<tab/><review date="2023-05-31" reviewer="Metanorma" id="_5fc47da1-fa20-43c7-8b0c-cf4e3e87c8d3"><p><strong>Metadata warnings:<strong/> <p>Secretariat is missing.</p><p>Editorial groups are missing.</p></strong></p></review>范围</title>
+<p id="_b3d64391-51ff-99eb-533b-313ce7174180">本文件规定了数字电影LED影厅的技术要求及相应的测量方法。</p>
+
+<p id="_e569b2b2-5f70-920b-a5dd-343df2eaa587">本文件适用于数字电影LED影厅的运行维护、检测认证、质量监督、技术管理和相关设备的安装、调试、验收和维护。</p>
+</clause>
+
+
+
+<terms id="___x672f___x8bed___x548c___x5b9a___x4e49_" obligation="normative" displayorder="6">
+<title depth="1">3<tab/>术语和定义</title><p id="_06844bb1-36f7-a933-7230-9a244a6f6950">下列术语和定义适用于本文件。</p>
+<p id="_557a6fef-40da-4ea3-fdd5-813f2a305787">ISO和IEC用于标准化的术语数据库地址如下：</p>
+<ul id="_c15691da-c050-cfe0-d1bc-87e5354ae8bc">
+<li> <p id="_e0ba54cd-1672-88db-e588-46bcc9400b61">ISO在线浏览平台:
+  位于<link target="https://www.iso.org/obp"/></p></li>
+<li> <p id="_54dee543-0f2b-09d1-33b0-fce2dbd216c7">IEC Electropedia:
+  位于<link target="https://www.electropedia.org"/>
+</p> </li> </ul>
+
+<p id="_77434159-de6d-31a3-211b-3cf25731d9b2">下列术语和定义适用于本文件。</p>
+
+<term id="term-__x6570___x5b57___x7535___x5f71_LED__x5f71___x5385_-digital-LED-cinema"><name>3.1</name><preferred language="zh"><strong>数字电影影厅　； LED　digital LED cinema</strong></preferred> 
+<definition><p id="_3bef1b6c-37f8-b240-a2d0-8f0c0f18c6f4">采用数字电影技术，使用LED显示屏放映电影的影厅。</p></definition>
+ </term>
+
+<term id="term-LED__x663e___x793a___x5c4f_-LED-display-screen"><name>3.2</name><preferred language="zh"><strong>显示屏　； LED　LED display screen</strong></preferred> 
+<definition><p id="_a3ac42b8-c22b-cbae-0cc4-87fc1e1ef670">以LED像素显示文字、图像及视频等信息的装置，通常包括LED屏体及显示控制系统等基本组成成分，也可包括辅助系统等，可采用一体式或分体式结构。</p></definition>
+
+
+ <termsource status="identical" type="authoritative">［定义： <origin bibitemid="SJT11141—2017" type="inline" citeas=""><localityStack>
+    <locality type="clause">
+      <referenceFrom>3．1</referenceFrom>
+    </locality>
+  </localityStack>， <span class="citesec">第3．1条</span></origin>］</termsource></term>
+
+<term id="term-__x50cf___x7d20_-pixel"><name>3.3</name><preferred language="zh"><strong>像素　；　pixel</strong></preferred> 
+<definition><p id="_cf61d35d-25dd-330b-95ea-e46be4f87481">LED显示屏的最小成像单元。
+注：通常由红色、绿色、蓝色发光二极管组成，每个发光二极管可视为亚像素。</p></definition>
+
+
+ <termsource status="identical" type="authoritative">［定义： <origin bibitemid="SJT11141—2017" type="inline" citeas=""><localityStack>
+    <locality type="clause">
+      <referenceFrom>3．6</referenceFrom>
+    </locality>
+  </localityStack>， <span class="citesec">第3．6条</span></origin>］</termsource></term>
+
+<term id="term-__x7535___x5149___x8f6c___x6362___x51fd___x6570_-electro-optic-transfer-function"><name>3.4</name><preferred language="zh"><strong>电光转换函数　-；　electro-optic transfer function</strong></preferred> 
+<definition><p id="_e2ec9257-6ab2-b2fb-88ac-394ccf7136d6">显示设备的输入编码值与光输出之间的函数关系。</p></definition>
+ </term>
+
+<term id="term-__x7acb___x4f53___x653e___x6620___x6d88___x5149___x6bd4_-stereoscopic-extinction-ratio"><name>3.5</name><preferred language="zh"><strong>立体放映消光比　；　stereoscopic extinction ratio</strong></preferred> 
+<definition><p id="_3e3da9b9-2f19-377b-45b6-59cfe64d27ba">左眼（右眼）图像亮度对串扰光和环境光的抗扰能力。</p></definition>
+
+
+ <termnote id="_60e14032-c99e-3bd2-d0e3-e062f25c3101"><name>注1</name><p id="_6a6a31ea-e8d7-9091-e0bc-356581c16c3b">左眼（右眼）图像亮度与串扰光和环境光的比，用：1方式表示。</p>
+</termnote></term>
+</terms>
+
+<clause id="___x7f29___x7565___x8bed_" inline-header="false" obligation="normative" displayorder="7">
+<title depth="1">4<tab/>缩略语</title>
+<p id="_0278b140-7a7a-5517-dcea-87bb2645f5e9">下列缩略语适用于本文件。</p>
+
+<p id="_92077d51-f3f4-c6eb-cae0-ce10afb2261c">IMB 集成媒体模块（Integrated Media Block）</p>
+
+<p id="_a8e47979-6503-8a84-2a31-9a1161d8e86f">HDR 高动态范围（High Dynamic Range）</p>
+
+<p id="_ebed9b55-ed20-c604-a54c-364cd3aa7667">LED 发光二极管（Light-Emitting Diode）</p>
+
+<p id="_71208ed5-f5c1-c557-da73-a02e865d1de0">SDR 标准动态范围（Standard Dynamic Range）</p>
+</clause>
+
+<clause id="Technicalrequirements" inline-header="false" obligation="normative" displayorder="8">
+<title depth="1">5<tab/>技术要求</title>
+<p id="_d59ea8ec-28ab-9d33-7f37-ca9bf708614b">数字电影LED影厅技术要求应符合<xref target="__x8868_1" style="short"><span class="citetbl">表1</span></xref>的规定。</p>
+
+<table id="__x8868_1">
+<name>表1 — 数字电影LED影厅技术要求</name>
+<thead><tr><th valign="top" align="left"><strong>序号</strong></th>
+<th valign="top" align="left"><strong>参数</strong></th>
+<th colspan="4" valign="top" align="left"><strong>要求</strong></th>
+<th valign="top" align="left"><strong>测量方法</strong></th>
+</tr></thead>
+<tbody><tr><td valign="top" rowspan="4" align="left">1</td>
+<td valign="top" rowspan="4" align="left"><p id="_49db1f26-ec6b-3e2d-579e-e2a6d8a0bd28">中心亮度(cd/m<sup>2</sup>)</p>
+</td>
+<td valign="top" align="left">目标 <sup>a</sup></td>
+<td valign="top" align="left">标准值</td>
+<td valign="top" align="left"><p id="_d0a509ee-f334-40c0-8fe4-b01ac2594852">审片室</p>
+</td>
+<td valign="top" align="left">影院</td>
+<td valign="top" rowspan="4" align="left">见<xref target="Centreluminance" style="short"><span class="citesec">条6．4．1</span></xref></td>
+</tr><tr><td valign="top" align="left">A</td>
+<td valign="top" align="left">48,0</td>
+<td valign="top" align="left">±3,5</td>
+<td valign="top" align="left">±10,2</td>
+</tr><tr><td valign="top" align="left">B</td>
+<td valign="top" align="left">24,0</td>
+<td valign="top" align="left">±1,8</td>
+<td valign="top" align="left">±5,1</td>
+</tr><tr><td valign="top" align="left">C</td>
+<td valign="top" align="left">15,5</td>
+<td valign="top" align="left">±1,1</td>
+<td valign="top" align="left">±3,3</td>
+</tr><tr><td valign="top" align="left">2</td>
+<td valign="top" align="left">luminance difference ratio</td>
+<td colspan="4" valign="top" align="left">shall not be more than 5 %</td>
+<td valign="top" align="left">见 <xref target="Luminancedifferenceratio" style="short"><span class="citesec">条6．4．2</span></xref></td>
+</tr><tr><td valign="top" align="left">3</td>
+<td valign="top" align="left">side luminance uniformity</td>
+<td colspan="4" valign="top" align="left"><p id="_afcdca54-7ec0-f98a-f654-d81525a6d46e">(should be): 75 % to 90 % of centre luminance</p>
+</td>
+<td valign="top" align="left">见 <xref target="Sideluminanceuniformity" style="short"><span class="citesec">条6．4．3</span></xref></td>
+</tr><tr><td valign="top" align="left">4</td>
+<td valign="top" align="left">centre white chromaticity</td>
+<td colspan="4" valign="top" align="left"><p id="_d62a1042-5441-eff2-c7c6-f70f572d181f">(should be): <em>x</em> = 0,314 ± 0,006, <em>y</em> = 0,351 ± 0,006</p>
+</td>
+<td valign="top" align="left">见 <xref target="Centrewhitechromaticity" style="short"><span class="citesec">条6．4．4</span></xref></td>
+</tr><tr><td colspan="7" valign="top" align="left"><sup>a</sup>   Filmmakers can prepare content that is optimized for any or each of the targets, and such content should always be clearly identified as to the intended playback luminance.</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="Testmethods" inline-header="false" obligation="normative" displayorder="9">
+<title depth="1">6<tab/>测量方法</title>
+<clause id="Measuringequipments" inline-header="false" obligation="normative">
+<title depth="2">6.1<tab/>测量设备</title>
+<clause id="Spectroradiometer" inline-header="false" obligation="normative">
+<title depth="3">6.1.1<tab/>亮度计</title>
+<p id="_9027ca41-be6a-e701-636f-2668fa070b12">The spectroradiometer shall comply with the requirements specified in <xref type="inline" style="short" target="GYT311_2017">GY/T 311—2017， <span class="citesec">第4．5</span></xref>.</p>
+</clause>
+
+<clause id="Photometer" inline-header="false" obligation="normative">
+<title depth="3">6.1.2<tab/>Photometer</title>
+<p id="_b9055177-27d5-0bd8-a26c-bec0b391098b">Screen luminance shall be measured with a spot photometer having the spectral luminance response of the standard observer (photopic vision), as defined in <xref type="inline" style="short" target="SJT11141_2017">SJ/T 11141—2017</xref>. The acceptance angle of the photometer shall be 2° or less. The lower limit of the measuring range shall be 0,01 cd/m<sup>2</sup> or better. The photometer response to luminance variation over time shall be to properly integrate any such variation occurring at frequencies at or above 24 Hz and display the arithmetic mean value.</p>
+</clause>
+</clause>
+
+<clause id="Signalofmeasurement" inline-header="false" obligation="normative">
+<title depth="2">6.2<tab/>Signal of measurement</title>
+<clause id="Whitefieldsignal" inline-header="false" obligation="normative">
+<title depth="3">6.2.1<tab/>White field signal</title>
+<p id="_fdf143fc-73ff-a9e4-7fa5-29def29fde77">The digital code values of the white field signal is (<em>X</em>‘=3 794, <em>Y</em>‘=3 960, <em>Z</em>‘=3 890).</p>
+</clause>
+</clause>
+
+<clause id="Measurementconditionsandmeasurementrequirements" inline-header="false" obligation="normative">
+<title depth="2">6.3<tab/>Measurement conditions and measurement requirements</title>
+<p id="_f3eac274-c152-286c-a581-0b04310b3e69">Measurement conditions shall meet the following requirements.</p>
+
+<ol id="_a0dd9961-ae16-6667-dcd3-e631ea824d2d" type="alphabet"><li><p id="_13280d4d-d8a4-4250-1931-725ebefe7651">All equipment shall be in normal operating status.</p>
+</li>
+<li><p id="_066d399d-7e63-6652-90c5-ecd3949013f3">Measurement shall be carried out after the light output of the digital projector stabilizes. Digital projector shall project white field signal through the stereoscopic equipment for 15 min.</p>
+</li>
+<li><p id="_f3cf09aa-399c-5c5d-0cee-64f1b8140a5c">The light of the digital projector shall pass through the stereoscopic projection equipment.</p>
+</li>
+<li><p id="_7e50935d-48df-ea83-8d54-8d0921e0a04b">When measuring through the stereoscopic glasses they shall be placed in a horizontal state, as a viewer would wear them. No tilt from the horizontal axis is allowed.</p>
+</li>
+<li><p id="_c833e7b4-dfa8-02dc-da80-818f1dbb6f01">All signals shall be output to the digital projector by Media Block. The measurement shall cover all valid screen images.</p>
+</li>
+<li><p id="_e104cae6-2b35-7ee9-b891-22602a83a387">Measurement location in the auditorium shall comply with the requirements specified in <xref type="inline" style="short" target="SJT11141_2017">SJ/T 11141—2017， <span class="citesec">第4．3</span></xref>.</p>
+</li>
+<li><p id="_7803531c-c4af-2bc1-bcb1-d67ea2c9a096">Measurement locations on the screen of Luminance, difference shall comply with the requirements specified in <xref type="inline" style="short" target="SJT11141_2017">SJ/T 11141—2017， <span class="citesec">第4．2</span></xref>.</p>
+</li>
+<li><p id="_2e844514-3265-8e49-c766-5c31edbe7a67">For using dual stereoscopic cinema screenings, both of the digital projectors shall also be turned on and working normally.</p>
+</li>
+<li><p id="_70313980-8e8c-1031-ad83-f5001f9ccd24">The measurement of the optical system of stereoscopic projection should be carried out within the range of the white colour chromaticity coordinates of the centre of the screen.</p>
+</li>
+</ol>
+</clause>
+
+<clause id="Themeasurementoftheopticalsystemofstereoscopicprojection" inline-header="false" obligation="normative">
+<title depth="2">6.4<tab/>The measurement of the optical system of stereoscopic projection</title>
+<clause id="Centreluminance" inline-header="false" obligation="normative">
+<title depth="3">6.4.1<tab/>Centre luminance</title>
+<p id="_623d9c96-8fbe-0d32-9ab0-a8e79c807e40">Measurement procedures.</p>
+
+<ol id="_4af17697-06ea-97fb-98dd-36ca77dfc2e3" type="alphabet"><li><p id="_56adc61a-7a8e-8dc7-540b-8ec1ea5a0d0c">Open the photometer and make it work normally.</p>
+</li>
+<li><p id="_3abb91d3-84b0-f6d8-a969-b0f89170049c">Set the digital projector as the stereoscopic projection mode and use the stereoscopic projection equipment.</p>
+</li>
+<li><p id="_95e6daa9-6ec3-a9f1-4c20-064ee130cd8e">The white field signal is simultaneously displayed in the left and right eyes.</p>
+</li>
+<li><p id="_4be99c73-75a2-7cea-8a01-61e3c3841116">Using the photometer to measure and record the left-eye white field centre luminance, <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>l</mi>
+        <mi>w</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(lw)</asciimath></stem>, and the right-eye white field centre luminance, <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>r</mi>
+        <mi>w</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(rw)</asciimath></stem>, through the left-eye lens and the right-eye lens of the stereo glasses.</p>
+</li>
+<li><p id="_d38388b6-28da-e02c-5774-92924476b016">Calculate and record the centre luminance, <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <mi>L</mi>
+  </mstyle>
+</math><asciimath>L</asciimath></stem>, according to <xref target="formula-1" style="short">公式（1）</xref>:</p>
+<formula id="formula-1"><name>1</name><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <mi>L</mi>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <msub>
+          <mi>L</mi>
+          <mrow>
+            <mi>l</mi>
+            <mi>w</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>L</mi>
+          <mrow>
+            <mi>r</mi>
+            <mi>w</mi>
+          </mrow>
+        </msub>
+      </mrow>
+      <mn>2</mn>
+    </mfrac>
+  </mstyle>
+</math><asciimath>L=frac(L_(lw)+L_(rw))(2)</asciimath></stem><p keep-with-next="true">式中</p><dl id="_37eb91d1-f3b6-d9de-7176-6d50c3a85262" key="true" class="formula_dl"><dt><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <mi>L</mi>
+  </mstyle>
+</math><asciimath>L</asciimath></stem></dt>
+<dd><p id="_81dfb4fd-e74b-26ae-2a46-3f4d2a976c81">is the centre luminance;</p>
+</dd>
+<dt><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>l</mi>
+        <mi>w</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(lw)</asciimath></stem></dt>
+<dd><p id="_71491340-ef95-11c6-0d9d-ad5ebe9417b0">is the centre luminance of the white field of the left-eye when the left and right eyes simultaneously display the white field signal;</p>
+</dd>
+<dt><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>r</mi>
+        <mi>w</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(rw)</asciimath></stem></dt>
+<dd><p id="_53665b05-5ef0-c3e8-7f6c-14baa80239de">is the centre luminance of the white field of the right-eye when the left and right eyes simultaneously display the white field signal.</p>
+</dd>
+</dl></formula>
+
+
+
+
+</li>
+</ol>
+</clause>
+
+<clause id="Luminancedifferenceratio" inline-header="false" obligation="normative">
+<title depth="3">6.4.2<tab/>Luminance difference ratio</title>
+<p id="_d4bacee4-27e4-f8b1-11b1-1ff30cc9d4cd">Measurement procedures.</p>
+
+<ol id="_d3c37682-ad43-6ed6-995e-9763af40fcd5" type="alphabet"><li><p id="_b02ab655-8ad7-2fbf-86d2-4fa123c4b424">Refer to the measurement method of centre luminance, record the left-eye white field centre luminance <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>l</mi>
+        <mi>w</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(lw)</asciimath></stem> and the right-eye white field centre luminance <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>l</mi>
+        <mi>w</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(lw)</asciimath></stem>.</p>
+</li>
+<li><p id="_28f5f82c-4853-10f8-df42-e020a1b01d26">Calculate and record the luminance difference ratio <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mi>d</mi>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(d)</asciimath></stem> according to <xref target="formula-2" style="short">公式（2）</xref>:</p>
+<formula id="formula-2"><name>2</name><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mi>d</mi>
+    </msub>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mo>|</mo>
+        <msub>
+          <mi>L</mi>
+          <mrow>
+            <mi>l</mi>
+            <mi>w</mi>
+          </mrow>
+        </msub>
+        <mo>−</mo>
+        <msub>
+          <mi>L</mi>
+          <mrow>
+            <mi>r</mi>
+            <mi>w</mi>
+          </mrow>
+        </msub>
+        <mo>|</mo>
+      </mrow>
+      <mrow>
+        <mrow>
+          <mo>(</mo>
+          <mtable>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>L</mi>
+                  <mrow>
+                    <mi>l</mi>
+                    <mi>w</mi>
+                  </mrow>
+                </msub>
+                <mo>+</mo>
+                <msub>
+                  <mi>L</mi>
+                  <mrow>
+                    <mi>r</mi>
+                    <mi>w</mi>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+          </mtable>
+          <mo>)</mo>
+        </mrow>
+        <mo>/</mo>
+        <mn>2</mn>
+      </mrow>
+    </mfrac>
+    <mi>×</mi>
+    <mn>100</mn>
+    <mi>%</mi>
+  </mstyle>
+</math><asciimath>L_(d)=frac(|L_(lw)-L_(rw)|)(((L_(lw)+L_(rw)))//2) × 100 %</asciimath></stem><p keep-with-next="true">式中</p><dl id="_6bee26e3-1aeb-9d77-e264-70e62d69d250" key="true" class="formula_dl"><dt><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mi>d</mi>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(d)</asciimath></stem></dt>
+<dd><p id="_b4c63468-e6d5-3560-572a-0c186c4a454d">is the luminance difference ratio;</p>
+</dd>
+<dt><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>l</mi>
+        <mi>w</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(lw)</asciimath></stem></dt>
+<dd><p id="_8bea204e-4f18-ea07-8eac-d10492d62df7">is the centre luminance of the white field of the left-eye when the left and right eyes simultaneously display the white field signal;</p>
+</dd>
+<dt><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>r</mi>
+        <mi>w</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(rw)</asciimath></stem></dt>
+<dd><p id="_e02cbff7-c0bf-b178-89ee-1d5534233a4c">is the centre luminance of the white field of the right-eye when the left and right eyes simultaneously display the white field signal.</p>
+</dd>
+</dl></formula>
+
+
+
+
+</li>
+</ol>
+</clause>
+
+<clause id="Sideluminanceuniformity" inline-header="false" obligation="normative">
+<title depth="3">6.4.3<tab/>Side luminance uniformity</title>
+<p id="_543b876b-e478-378e-94d6-48b91657d931">Measurement procedures.</p>
+
+<ol id="_e6ce6e04-759f-8dde-9ce5-06802d157694" type="alphabet"><li><p id="_83aa2f2d-77cd-16f3-61d2-122cab3233b9">Open the photometer and make it work normally.</p>
+</li>
+<li><p id="_a0d5cf98-edc6-6cf2-a228-dbd4ef4e816f">Set the digital projector as the stereoscopic projection mode and use the stereoscopic projection equipment.</p>
+</li>
+<li><p id="_427d58ae-9c71-2ec7-19eb-26096ccc1ea1">The white field signal is simultaneously displayed in the left and right eyes.</p>
+</li>
+<li><p id="_10d89f6e-b697-622d-5f2c-eabca121a3c9">Measure the luminance, <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>l</mi>
+        <mi>w</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(lw)</asciimath></stem>, of white field in the centre of screen and the luminance, <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>l</mi>
+        <mi>s</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(ls)</asciimath></stem>, of white field of four sides by using photometer through stereoscopic glasses of left-eye.</p>
+</li>
+<li><p id="_195bff0e-4b0c-45a9-faa2-e9ea74549e3c">Measure the luminance, <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>r</mi>
+        <mi>w</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(rw)</asciimath></stem>, of white field in the centre of screen and the luminance, <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>l</mi>
+        <mi>s</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(ls)</asciimath></stem>, of white field of four sides by using photometer through stereoscopic glasses of right-eye.</p>
+</li>
+<li><p id="_4ddeb820-2186-66cf-87e5-012ede208a00">Calculate and record the side luminance uniformity, <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>U</mi>
+      <mi>l</mi>
+    </msub>
+  </mstyle>
+</math><asciimath>U_(l)</asciimath></stem> of the upper, lower, left and right edges of the white field of the left-eye according to <xref target="formula-3" style="short">公式（3）</xref>:</p>
+<formula id="formula-3"><name>3</name><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>U</mi>
+      <mi>l</mi>
+    </msub>
+    <mo>=</mo>
+    <mfrac>
+      <msub>
+        <mi>L</mi>
+        <mrow>
+          <mi>l</mi>
+          <mi>s</mi>
+        </mrow>
+      </msub>
+      <msub>
+        <mi>L</mi>
+        <mrow>
+          <mi>l</mi>
+          <mi>w</mi>
+        </mrow>
+      </msub>
+    </mfrac>
+    <mi>×</mi>
+    <mn>100</mn>
+    <mi>%</mi>
+  </mstyle>
+</math><asciimath>U_(l)=frac(L_(ls))(L_(lw)) × 100 %</asciimath></stem><p keep-with-next="true">式中</p><dl id="_f68fac50-d9ad-56ab-3519-ee6159458fbb" key="true" class="formula_dl"><dt><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>U</mi>
+      <mi>l</mi>
+    </msub>
+  </mstyle>
+</math><asciimath>U_(l)</asciimath></stem></dt>
+<dd><p id="_6d475f43-e033-2996-c177-e70bfa17b6bb">is the left-eye side luminance uniformity;</p>
+</dd>
+<dt><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>l</mi>
+        <mi>w</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(lw)</asciimath></stem></dt>
+<dd><p id="_fca4acb5-d0ef-ec63-4e36-f5a20f7818aa">is the centre luminance of the white field of the left-eye when the left and right eyes simultaneously display the white field signal;</p>
+</dd>
+<dt><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>l</mi>
+        <mi>s</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(ls)</asciimath></stem></dt>
+<dd><p id="_44ab0a1c-e4eb-f3ea-cd20-db053822cbbf">is the left-eye luminance of white field of four sides when the left and right eyes simultaneously display the white field signal.</p>
+</dd>
+</dl></formula>
+
+
+
+
+</li>
+<li><p id="_1b9514a4-c390-dfd9-96e5-ffd4403a222c">calculate and record the side luminance uniformity <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>U</mi>
+      <mi>r</mi>
+    </msub>
+  </mstyle>
+</math><asciimath>U_(r)</asciimath></stem> of the upper, lower, left and right sides of the white field of the right-eye according to <xref target="formula-4" style="short">公式（4）</xref>:</p>
+<formula id="formula-4"><name>4</name><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>U</mi>
+      <mi>r</mi>
+    </msub>
+    <mo>=</mo>
+    <mfrac>
+      <msub>
+        <mi>L</mi>
+        <mrow>
+          <mi>r</mi>
+          <mi>s</mi>
+        </mrow>
+      </msub>
+      <msub>
+        <mi>L</mi>
+        <mrow>
+          <mi>r</mi>
+          <mi>w</mi>
+        </mrow>
+      </msub>
+    </mfrac>
+    <mi>×</mi>
+    <mn>100</mn>
+    <mi>%</mi>
+  </mstyle>
+</math><asciimath>U_(r)=frac(L_(rs))(L_(rw)) × 100 %</asciimath></stem><p keep-with-next="true">式中</p><dl id="_57b4a82c-4b02-9c15-58be-ff888d88f408" key="true" class="formula_dl"><dt><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>U</mi>
+      <mi>r</mi>
+    </msub>
+  </mstyle>
+</math><asciimath>U_(r)</asciimath></stem></dt>
+<dd><p id="_09309127-d192-255a-731b-a01d3ba65a99">is the right-eye side luminance uniformity;</p>
+</dd>
+<dt><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>r</mi>
+        <mi>w</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(rw)</asciimath></stem></dt>
+<dd><p id="_2f478dcc-9448-4554-fe50-c15ea1673eee">is the centre luminance of the white field of the right-eye when the left and right eyes simultaneously display the white field signal;</p>
+</dd>
+<dt><stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true">
+    <msub>
+      <mi>L</mi>
+      <mrow>
+        <mi>r</mi>
+        <mi>s</mi>
+      </mrow>
+    </msub>
+  </mstyle>
+</math><asciimath>L_(rs)</asciimath></stem></dt>
+<dd><p id="_b545f032-b2d0-761a-f3ab-4365522f75c3">is the right-eye luminance of white field of four sides when the left and right eyes simultaneously display the white field signal.</p>
+</dd>
+</dl></formula>
+
+
+
+
+</li>
+</ol>
+</clause>
+
+<clause id="Centrewhitechromaticity" inline-header="false" obligation="normative">
+<title depth="3">6.4.4<tab/>Centre white chromaticity</title>
+<p id="_68a6dd62-5bb5-b79b-59a5-51f0afab1670">Measurement procedures.</p>
+
+<ol id="_61d9d6d7-c2ea-169c-519f-30482029f231" type="alphabet"><li><p id="_45db5b9c-f87b-2de9-375c-0326bdafddfa">Open the spectroradiometer and make it work normally.</p>
+</li>
+<li><p id="_ba711c64-39ce-9c2d-cb66-15697a56b590">Set the digital projector as the stereoscopic projection mode and use the stereoscopic projection equipment.</p>
+</li>
+<li><p id="_62902019-f664-5607-9a55-f9539a9eec75">The white field signal is simultaneously displayed in the left and right eyes.</p>
+</li>
+<li><p id="_40e1d637-3eca-2fbb-1624-69b2a2b2bae1">Using the spectroradiometer to measure and record the centre white chromaticity through the left-eye lens and the right-eye lens of the stereo glasses.</p>
+</li>
+</ol>
+</clause>
+</clause>
+</clause>
+</sections><bibliography><references id="___x89c4___x8303___x6027___x5f15___x7528___x6587___x4ef6_" normative="true" obligation="informative" displayorder="5">
+<title depth="1">2<tab/>规范性引用文件</title><p id="_f490f9b5-7983-008c-52df-66f9022845a5">下列文件对于本文件的应用是必不可少的。 凡是注日期的引用文件，仅注日期的版本适用于本文件。 凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。</p>
+
+
+<bibitem id="GYT311_2017"><formattedref format="application/x-isodoc+xml">　电影院视听环境技术要求和测量方法</formattedref><docidentifier>GY/T 311—2017</docidentifier><docnumber>311—2017</docnumber><biblio-tag>GY/T 311—2017, </biblio-tag></bibitem>
+<bibitem id="GYT312_2017"><formattedref format="application/x-isodoc+xml">　电影　录音控制室、室内影厅B环电声响应规范和测量</formattedref><docidentifier>GY/T 312—2017</docidentifier><docnumber>312—2017</docnumber><biblio-tag>GY/T 312—2017, </biblio-tag></bibitem>
+<bibitem id="SJT11141_2017"><formattedref format="application/x-isodoc+xml">　发光二极管（LED）显示屏通用规范</formattedref><docidentifier>SJ/T 11141—2017</docidentifier><docnumber>11141—2017</docnumber><biblio-tag>SJ/T 11141—2017, </biblio-tag></bibitem>
+</references></bibliography>
+</gb-standard>

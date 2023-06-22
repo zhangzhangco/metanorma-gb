@@ -1,0 +1,7 @@
+Content overflows the viewport of an fo:block-container in block-progression direction by 6931 millipoints. (See position 1:11909)
+Glyph " " (0xa0, nbspace) not available in font "SimHei".
+The contents of fo:block line 1 exceed the available area in the inline-progression direction by 5162 millipoints. (See position 31:70)
+The contents of fo:block line 1 exceed the available area in the inline-progression direction by 5162 millipoints. (See position 33:70)
+WARNING: An fo:table   (See position 64:176) is wider than the available width of page. Please check this overflowing table on the page 1.
+Page 1: Unresolved ID reference "SJT11141—2017" found.
+Page 2: Unresolved ID reference "SJT11141—2017" found.

@@ -1,12 +1,14 @@
-lib = File.expand_path("../lib", __FILE__)
+# coding: utf-8
+
+lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "metanorma/gb/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "metanorma-gb"
   spec.version       = Metanorma::Gb::VERSION
-  spec.authors       = ["Ribose Inc."]
-  spec.email         = ["open.source@ribose.com"]
+  spec.authors       = ["Ribose Inc. Zhangxin"]
+  spec.email         = ["open.source@ribose.com;460212@qq.com"]
 
   spec.summary       = "metanorma-gb lets you write GB standards in AsciiDoc."
   spec.description   = <<~DESCRIPTION
@@ -21,29 +23,35 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/metanorma/metanorma-gb"
   spec.license       = "BSD-2-Clause"
 
+  spec.bindir        = "bin"
+  spec.require_paths = ["lib"]
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-  spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
 
-  spec.add_dependency "metanorma-iso", "~> 1.5.10"
-  spec.add_dependency "isodoc", "~> 1.2.0"
-  spec.add_dependency "twitter_cldr", "~> 4.4.4"
-  spec.add_dependency "gb-agencies", "~> 0.0.4"
-  spec.add_dependency "htmlentities", "~> 4.3.4"
+  spec.add_dependency "metanorma-iso"
+  spec.add_dependency "isodoc"
+  spec.add_dependency "twitter_cldr"
+  spec.add_dependency "gb-agencies"
+  spec.add_dependency "htmlentities"
+  spec.add_dependency "asciidoctor"
 
-  spec.add_development_dependency "byebug", "~> 9.1"
-  spec.add_development_dependency "sassc", "2.4.0"
-  spec.add_development_dependency "equivalent-xml", "~> 0.6"
-  spec.add_development_dependency "guard", "~> 2.14"
-  spec.add_development_dependency "guard-rspec", "~> 4.7"
-  spec.add_development_dependency "rake", "~> 12.0"
-  spec.add_development_dependency "rspec", "~> 3.6"
-  spec.add_development_dependency "rubocop", "= 0.54.0"
-  spec.add_development_dependency "simplecov", "~> 0.15"
-  spec.add_development_dependency "timecop", "~> 0.9"
+  spec.add_development_dependency "byebug"
+  spec.add_development_dependency "sassc"
+  spec.add_development_dependency "equivalent-xml"
+  spec.add_development_dependency "guard"
+  spec.add_development_dependency "guard-rspec"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rubocop"
+  spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "timecop"
   spec.add_development_dependency "metanorma"
+  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "webmock"
+  spec.add_development_dependency "materialize"
+  spec.add_development_dependency "ruby-debug-ide"
+  spec.add_development_dependency "debase"
 end

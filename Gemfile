@@ -3,8 +3,11 @@ Encoding.default_internal = Encoding::UTF_8
 
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}" }
+
+#gem "relaton", git: "https://github.com/relaton/relaton"
+
 gemspec
 
-if File.exist? 'Gemfile.devel'
-  eval File.read('Gemfile.devel'), nil, 'Gemfile.devel' # rubocop:disable Security/Eval
+if File.exist? "Gemfile.devel"
+  eval File.read("Gemfile.devel"), nil, "Gemfile.devel" # rubocop:disable Security/Eval
 end

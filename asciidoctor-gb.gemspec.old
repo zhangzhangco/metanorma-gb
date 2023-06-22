@@ -3,8 +3,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "asciidoctor/gb/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "asciidoctor-gb"
-  spec.version       = Asciidoctor::Gb::VERSION
+  spec.name          = "metanorma-gb"
+  spec.version       = Metanorma::Gb::VERSION
   spec.authors       = ["Ribose Inc."]
   spec.email         = ["open.source@ribose.com"]
 

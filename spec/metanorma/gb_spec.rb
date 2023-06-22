@@ -2,8 +2,8 @@ require "spec_helper"
 require "fileutils"
 require "relaton_gb"
 
-RSpec.describe Asciidoctor::Gb do
-  it "has a version number" do
+RSpec.describe Metanorma::Gb do
+  it "ok has a version number" do
     expect(Metanorma::Gb::VERSION).not_to be nil
   end
 
@@ -431,7 +431,7 @@ RSpec.describe Asciidoctor::Gb do
     mock_gbbib_get_123("en")
     expect(xmlpp(strip_guid(Asciidoctor.convert(<<~"INPUT", backend: :gb, header_footer: true)))).to be_equivalent_to xmlpp(<<~"OUTPUT")
       #{ISOBIB_BLANK_HDR}
-      
+
       <<iso123>>
 
       [bibliography]

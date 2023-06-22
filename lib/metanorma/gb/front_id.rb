@@ -1,4 +1,4 @@
-module Asciidoctor
+module Metanorma
   module Gb
     class Converter < ISO::Converter
       STAGE_ABBRS_CN = {
@@ -8,10 +8,18 @@ module Asciidoctor
         "30": "标准草案征求意见稿",
         "40": "标准草案送审稿",
         "50": "标准草案报批稿",
-        "60": "国家标准",
-        "90": "(Review)",
-        "95": "(Withdrawal)",
+        "60": "现行标准",
+        "90": "复审",
+        "95": "废止",
       }.freeze
+
+      def stage_abbr(stage, substage, _doctype)
+        return nil if stage.to_i > 60
+
+        ret = STAGE_ABBRS_CN[stage.to_sym]
+        ret = "PRF" if stage == "60" && substage == "00"
+        ret
+      end
 
       def stage_name(stage, substage)
         return "Proof" if stage == "60" && substage == "00"
@@ -23,7 +31,6 @@ module Asciidoctor
         return unless node.attr("docnumber")
         part = node.attr("partnumber")
         dn = add_id_parts(node.attr("docnumber"), part, nil)
-        dn = id_stage_prefix(dn, node)
         xml.docidentifier dn, **attr_code(type: "gb")
       end
 

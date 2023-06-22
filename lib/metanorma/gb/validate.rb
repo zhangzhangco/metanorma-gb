@@ -1,4 +1,4 @@
-module Asciidoctor
+module Metanorma
   module Gb
     class Converter < ISO::Converter
       def validate(doc)
@@ -44,10 +44,10 @@ module Asciidoctor
           /^[A-Z0-9]{3,}$/.match(prefix) or
             @log.add("Document Attributes", nil, "#{prefix} is improperly formatted for enterprise standards")
         when "sector"
-          %w(AQ BB CB CH CJ CY DA DB DL DZ EJ FZ GA GH GM GY HB HG HJ HS HY
-             JB JC JG JR JT JY LB LD LS LY MH MT MZ NY QB QC QJ QX SB SC SH
-             SJ SL SN SY TB TD TJ TY WB WH WJ WM WS WW XB YB YC YD YS YY YZ
-             ZY).include? prefix or
+          %w(AQ BB CB CH CJ CY DA DB DL DZ DY EJ FZ GA GH GM GY HB HG HJ HS
+             HY JB JC JG JR JT JY LB LD LS LY MH MT MZ NY QB QC QJ QX SB SC
+             SH SJ SL SN SY TB TD TJ TY WB WH WJ WM WS WW XB YB YC YD YS YY
+             YZ ZY).include? prefix or
              @log.add("Document Attributes", nil, "#{prefix} is not a legal sector standard prefix")
         when "local"
           %w(11 12 13 14 15 21 22 23 31 32 33 34 35 36 37 41 42 43 44 45 46
@@ -120,7 +120,7 @@ module Asciidoctor
 
       def norm_bibitem_style(root)
         root.xpath(NORM_BIBITEMS).each do |b|
-          if b.at(Asciidoctor::Standoc::Converter::ISO_PUBLISHER_XPATH).nil?
+          if b.at(Metanorma::Standoc::Converter::ISO_PUBLISHER_XPATH).nil?
             unless /^#{GBCODE}(?![A-Z])/.match(b.at("./docidentifier").text)
               @log.add("Bibliography", b, "#{NORM_ISO_WARN}: #{b.text}")
             end

@@ -1,0 +1,182 @@
+/Users/vfx5/metanorma-gb/spec/examples/gb/document.err errors
+
+
+== Document Attributes
+
+(): GB: no topic supplied, defaulting to basic
+
+
+== Crossreferences
+
+(XML Line 000081): SJT11141—2017 does not have a corresponding anchor ID in the bibliography!
+	<origin bibitemid="SJT11141—2017" type="inline" citeas="">clause="3.1"</origin>
+(XML Line 000092): SJT11141—2017 does not have a corresponding anchor ID in the bibliography!
+	<origin bibitemid="SJT11141—2017" type="inline" citeas="">clause="3.6"</origin>
+
+
+== Bibliography
+
+(XML Line 000205): Style override set for ordered list
+	<ol id="_23ee2894-ed2b-42b3-94b9-d62caf2fb7ff"><li><p id="_c2cc21d0-213b-4fdd-9c44-ac2e8136f9da">All equipment shall be in normal operating status.</p>
+	</li>
+	<li><p id="_a6787c15-35c0-48bd-aec8-c0834efb7bbe">Measurement shall be carried out after the light output of the digital projector stabilizes. Digital projector shall project white field signal through the stereoscopic equipment for 15 min.</p>
+	</li>
+	<li><p id="_f8e2ce14-8db2-4d84-bbb0-ad844194aa66">The light of the digital projector shall pass through the stereoscopic projection equipment.</p>
+(XML Line 000232): Style override set for ordered list
+	<ol id="_1deac0fc-89c2-4463-bab9-95d4022bb89d"><li><p id="_844d9b14-fd73-4c58-b496-67d7b3fdca5a">Open the photometer and make it work normally.</p>
+	</li>
+	<li><p id="_b194163f-9465-46bd-8aab-05ea0fa3e8bc">Set the digital projector as the stereoscopic projection mode and use the stereoscopic projection equipment.</p>
+	</li>
+	<li><p id="_379ce6bc-44f4-4161-9534-6e120669db87">The white field signal is simultaneously displayed in the left and right eyes.</p>
+(XML Line 000336): Style override set for ordered list
+	<ol id="_79674033-7f8f-4461-8713-29a42644e4d1"><li><p id="_b30763dc-6285-42b3-b06a-a0983f69f7e0">Refer to the measurement method of centre luminance, record the left-eye white field centre luminance <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+	  <mstyle displaystyle="true">
+	    <msub>
+	      <mi>L</mi>
+	      <mrow>
+(XML Line 000476): Style override set for ordered list
+	<ol id="_f031d08f-0038-4cfc-993f-46c0cd9beb13"><li><p id="_05ec0cbf-56ac-4ee0-b940-acf500ad19ee">Open the photometer and make it work normally.</p>
+	</li>
+	<li><p id="_76f3a1e4-3283-44e2-bbee-d0b026ca6863">Set the digital projector as the stereoscopic projection mode and use the stereoscopic projection equipment.</p>
+	</li>
+	<li><p id="_2ab66d54-193d-4bee-85c9-633d135066ac">The white field signal is simultaneously displayed in the left and right eyes.</p>
+(XML Line 000687): Style override set for ordered list
+	<ol id="_76e91294-b71b-4773-a77e-1b004ff469f5"><li><p id="_ec0e3e48-cf15-498c-9d15-5198087b4df5">Open the spectroradiometer and make it work normally.</p>
+	</li>
+	<li><p id="_e5b27307-c888-492e-918b-2ee4dbd2a10d">Set the digital projector as the stereoscopic projection mode and use the stereoscopic projection equipment.</p>
+	</li>
+	<li><p id="_c898807a-0aec-435d-9c4f-4d5dccb3af71">The white field signal is simultaneously displayed in the left and right eyes.</p>
+
+
+== Anchors
+
+(XML Line 000048): normalised identifier in <clause id="___x8303___x56f4_" type="scope" inline-header="false" obligation="normative"/> from _范围
+	<clause id="___x8303___x56f4_" type="scope" inline-header="false" obligation="normative">
+	<title>范围</title>
+	<p id="_2e317722-23fb-431f-a23b-948de21bc1eb">本文件规定了数字电影LED影厅的技术要求及相应的测量方法。</p>
+	
+	<p id="_eb39caf1-6510-4793-a010-8311bebaaefa">本文件适用于数字电影LED影厅的运行维护、检测认证、质量监督、技术管理和相关设备的安装、调试、验收和维护。</p>
+(XML Line 000055): normalised identifier in <references id="___x89c4___x8303___x6027___x5f15___x7528___x6587___x4ef6_" normative="true" obligation="informative"/> from _规范性引用文件
+	<references id="___x89c4___x8303___x6027___x5f15___x7528___x6587___x4ef6_" normative="true" obligation="informative">
+	<title>规范性引用文件</title><p id="_33d5996a-9162-4ef9-8177-45a3eceb3b9f">下列文件对于本文件的应用是必不可少的。 凡是注日期的引用文件，仅注日期的版本适用于本文件。 凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。</p>
+	
+	
+	<bibitem id="GYT311_2017"><formattedref format="application/x-isodoc+xml">　电影院视听环境技术要求和测量方法</formattedref><docidentifier>GY/T 311—2017</docidentifier><docnumber>311—2017</docnumber></bibitem>
+(XML Line 000064): normalised identifier in <terms id="___x672f___x8bed___x548c___x5b9a___x4e49_" obligation="normative"/> from _术语和定义
+	<terms id="___x672f___x8bed___x548c___x5b9a___x4e49_" obligation="normative">
+	<title>术语和定义</title><p id="_dd0fa276-5f1b-441f-bf15-e4c7e9baca4c">下列术语和定义适用于本文件。</p>
+	<p id="_7476e7dc-8211-4b20-84be-c2824e211c1f">ISO和IEC用于标准化的术语数据库地址如下：</p>
+	<ul id="_bca9d04f-c8f6-4a79-b9f0-ac660e6d0a14">
+	<li> <p id="_7f6d3ff4-ff10-4193-a079-add07c10153e">ISO在线浏览平台:
+(XML Line 000114): normalised identifier in <clause id="___x7f29___x7565___x8bed_" inline-header="false" obligation="normative"/> from _缩略语
+	<clause id="___x7f29___x7565___x8bed_" inline-header="false" obligation="normative">
+	<title>缩略语</title>
+	<p id="_afdfdafb-860c-47f4-8e05-a38af5b5f079">下列缩略语适用于本文件。</p>
+	
+	<p id="_5adbbeec-e275-4e7e-9c70-89d5b2ab0bc1">IMB 集成媒体模块（Integrated Media Block）</p>
+(XML Line 000129): normalised identifier in <xref target="__x8868_1" style="short"/> from 表1
+	<xref target="__x8868_1" style="short"/>
+(XML Line 000131): normalised identifier in <table id="__x8868_1"/> from 表1
+	<table id="__x8868_1">
+	<name>数字电影LED影厅技术要求</name>
+	<thead><tr><th valign="top" align="left"><strong>序号</strong></th>
+	<th valign="top" align="left"><strong>参数</strong></th>
+	<th colspan="4" valign="top" align="left"><strong>要求</strong></th>
+
+
+== Style
+
+(): Whitefieldsignal:White field signal: subclause is only child
+(): Final section must be (references) Bibliography
+(XML Line 000034): possible decimal point: 1.1
+	<p id="_9e8a68db-ca01-00ff-0d54-3210645403ef">本文件按照GB/T 1.1—2020《标准化工作导则  第1部分：标准化文件的结构和起草规则》的规定起草。</p>
+(XML Line 000081): possible decimal point: 3.1
+	<termsource status="identical" type="authoritative"><origin bibitemid="SJT11141—2017" type="inline" citeas=""><localityStack><locality type="clause"><referenceFrom>3.1</referenceFrom></locality></localityStack></origin>
+	</termsource>
+(XML Line 000092): possible decimal point: 3.6
+	<termsource status="identical" type="authoritative"><origin bibitemid="SJT11141—2017" type="inline" citeas=""><localityStack><locality type="clause"><referenceFrom>3.6</referenceFrom></locality></localityStack></origin>
+	</termsource>
+(XML Line 000127): Scope must occur before Terms and Definitions
+	<clause id="Technicalrequirements" inline-header="false" obligation="normative">
+	<title>技术要求</title>
+	<p id="_d59ea8ec-28ab-9d33-7f37-ca9bf708614b">数字电影LED影厅技术要求应符合<xref target="__x8868_1" style="short"/>的规定。</p>
+	
+	<table id="__x8868_1">
+(XML Line 000178): Scope must occur before Terms and Definitions
+	<clause id="Testmethods" inline-header="false" obligation="normative">
+	<title>测量方法</title>
+	<clause id="Measuringequipments" inline-header="false" obligation="normative">
+	<title>测量设备</title>
+	<clause id="Spectroradiometer" inline-header="false" obligation="normative">
+(XML Line 000184): possible decimal point: 4.5
+	<p id="_9027ca41-be6a-e701-636f-2668fa070b12">The spectroradiometer shall comply with the requirements specified in <eref type="inline" style="short" bibitemid="GYT311_2017" citeas="GY/T 311—2017"><localityStack><locality type="clause"><referenceFrom>4.5</referenceFrom></locality></localityStack></eref>.</p>
+(XML Line 000215): possible decimal point: 4.3
+	<p id="_e104cae6-2b35-7ee9-b891-22602a83a387">Measurement location in the auditorium shall comply with the requirements specified in <eref type="inline" style="short" bibitemid="SJT11141_2017" citeas="SJ/T 11141—2017"><localityStack><locality type="clause"><referenceFrom>4.3</referenceFrom></locality></localityStack></eref>.</p>
+(XML Line 000217): possible decimal point: 4.2
+	<p id="_7803531c-c4af-2bc1-bcb1-d67ea2c9a096">Measurement locations on the screen of Luminance, difference shall comply with the requirements specified in <eref type="inline" style="short" bibitemid="SJT11141_2017" citeas="SJ/T 11141—2017"><localityStack><locality type="clause"><referenceFrom>4.2</referenceFrom></locality></localityStack></eref>.</p>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000002:110): found attribute "schema-version", but no attributes allowed here
+(XML Line 000021:77): value of attribute "type" is invalid; must be equal to "adapter", "author", "distributor", "editor", "performer", "publisher" or "translator"
+(XML Line 000023:67): value of attribute "type" is invalid; must be equal to "adapter", "author", "distributor", "editor", "performer", "publisher" or "translator"
+(XML Line 000025:66): value of attribute "type" is invalid; must be equal to "adapter", "author", "distributor", "editor", "performer", "publisher" or "translator"
+(XML Line 000027:64): value of attribute "type" is invalid; must be equal to "adapter", "author", "distributor", "editor", "performer", "publisher" or "translator"
+(XML Line 000031:414): element "ext" incomplete; missing required element "ccs"
+(XML Line 000031:445): element "metanorma-extension" not allowed here; expected element "boilerplate", "preface" or "termdocsource"
+(XML Line 000031:97): value of attribute "type" is invalid; must be equal to "drafting", "provisional" or "technical"
+(XML Line 000051:90): attribute "type" not allowed here; expected attribute "inline-header", "language", "obligation" or "script"
+(XML Line 000072:125): element "expression" not allowed here; expected the element end-tag, text or element "bookmark", "br", "concept", "em", "eref", "hr", "image", "index", "keyword", "link", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000072:208): element "expression" not allowed here; expected the element end-tag, text or element "bookmark", "br", "concept", "em", "eref", "hr", "image", "index", "keyword", "link", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000073:140): element "definition" incomplete; expected element "figure", "formula" or "p"
+(XML Line 000073:32): element "verbal-definition" not allowed here; expected element "figure", "formula" or "p"
+(XML Line 000073:78): found attribute "id", but no attributes allowed here
+(XML Line 000076:101): element "expression" not allowed here; expected the element end-tag, text or element "bookmark", "br", "concept", "em", "eref", "hr", "image", "index", "keyword", "link", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000076:181): element "expression" not allowed here; expected the element end-tag, text or element "bookmark", "br", "concept", "em", "eref", "hr", "image", "index", "keyword", "link", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000077:185): element "definition" incomplete; expected element "figure", "formula" or "p"
+(XML Line 000077:32): element "verbal-definition" not allowed here; expected element "figure", "formula" or "p"
+(XML Line 000077:78): found attribute "id", but no attributes allowed here
+(XML Line 000080:112): IDREF "SJT11141—2017" without matching ID
+(XML Line 000080:112): value of attribute "bibitemid" is invalid; must be an XML name without colons
+(XML Line 000080:54): found attribute "type", but no attributes allowed here
+(XML Line 000083:156): element "expression" not allowed here; expected the element end-tag, text or element "bookmark", "br", "concept", "em", "eref", "hr", "image", "index", "keyword", "link", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000083:77): element "expression" not allowed here; expected the element end-tag, text or element "bookmark", "br", "concept", "em", "eref", "hr", "image", "index", "keyword", "link", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000084:32): element "verbal-definition" not allowed here; expected element "figure", "formula" or "p"
+(XML Line 000084:78): found attribute "id", but no attributes allowed here
+(XML Line 000085:73): element "definition" incomplete; expected element "figure", "formula" or "p"
+(XML Line 000088:112): IDREF "SJT11141—2017" without matching ID
+(XML Line 000088:112): value of attribute "bibitemid" is invalid; must be an XML name without colons
+(XML Line 000088:54): found attribute "type", but no attributes allowed here
+(XML Line 000091:135): element "expression" not allowed here; expected the element end-tag, text or element "bookmark", "br", "concept", "em", "eref", "hr", "image", "index", "keyword", "link", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000091:219): element "expression" not allowed here; expected the element end-tag, text or element "bookmark", "br", "concept", "em", "eref", "hr", "image", "index", "keyword", "link", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000092:137): element "definition" incomplete; expected element "figure", "formula" or "p"
+(XML Line 000092:32): element "verbal-definition" not allowed here; expected element "figure", "formula" or "p"
+(XML Line 000092:78): found attribute "id", but no attributes allowed here
+(XML Line 000095:141): element "expression" not allowed here; expected the element end-tag, text or element "bookmark", "br", "concept", "em", "eref", "hr", "image", "index", "keyword", "link", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000095:225): element "expression" not allowed here; expected the element end-tag, text or element "bookmark", "br", "concept", "em", "eref", "hr", "image", "index", "keyword", "link", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000096:139): element "definition" incomplete; expected element "figure", "formula" or "p"
+(XML Line 000096:32): element "verbal-definition" not allowed here; expected element "figure", "formula" or "p"
+(XML Line 000096:78): found attribute "id", but no attributes allowed here
+(XML Line 000118:103): attribute "style" not allowed here; expected attribute "alt", "case", "droploc" or "type"
+(XML Line 000135:90): attribute "style" not allowed here; expected attribute "alt", "case", "droploc" or "type"
+(XML Line 000151:88): attribute "style" not allowed here; expected attribute "alt", "case", "droploc" or "type"
+(XML Line 000156:87): attribute "style" not allowed here; expected attribute "alt", "case", "droploc" or "type"
+(XML Line 000161:87): attribute "style" not allowed here; expected attribute "alt", "case", "droploc" or "type"
+(XML Line 000173:198): attribute "style" not allowed here; expected attribute "alt", "bibitemid", "citeas" or "normative"
+(XML Line 000178:288): attribute "style" not allowed here; expected attribute "alt", "bibitemid", "citeas" or "normative"
+(XML Line 000194:48): element "ol" missing required attribute "type"
+(XML Line 000204:223): attribute "style" not allowed here; expected attribute "alt", "bibitemid", "citeas" or "normative"
+(XML Line 000206:245): attribute "style" not allowed here; expected attribute "alt", "bibitemid", "citeas" or "normative"
+(XML Line 000221:48): element "ol" missing required attribute "type"
+(XML Line 000253:94): attribute "style" not allowed here; expected attribute "alt", "case", "droploc" or "type"
+(XML Line 000279:120): attribute "key" not allowed here; expected attribute "keep-lines-together" or "keep-with-next"
+(XML Line 000325:48): element "ol" missing required attribute "type"
+(XML Line 000354:97): attribute "style" not allowed here; expected attribute "alt", "case", "droploc" or "type"
+(XML Line 000416:153): attribute "key" not allowed here; expected attribute "keep-lines-together" or "keep-with-next"
+(XML Line 000465:48): element "ol" missing required attribute "type"
+(XML Line 000522:174): attribute "style" not allowed here; expected attribute "alt", "case", "droploc" or "type"
+(XML Line 000550:130): attribute "key" not allowed here; expected attribute "keep-lines-together" or "keep-with-next"
+(XML Line 000599:175): attribute "style" not allowed here; expected attribute "alt", "case", "droploc" or "type"
+(XML Line 000627:130): attribute "key" not allowed here; expected attribute "keep-lines-together" or "keep-with-next"
+(XML Line 000676:48): element "ol" missing required attribute "type"

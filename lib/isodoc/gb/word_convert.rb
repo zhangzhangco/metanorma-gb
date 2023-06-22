@@ -1,6 +1,6 @@
 require_relative "base_convert"
-require_relative "init"
 require "isodoc"
+require_relative "init"
 
 module IsoDoc
   module Gb
@@ -24,7 +24,11 @@ module IsoDoc
           headerfont: (script == "Hans" ? '"SimHei",sans-serif' : '"Calibri",sans-serif'),
           monospacefont: '"Courier New",monospace',
           titlefont: (scope == "national" ? (script != "Hans" ? '"Cambria",serif' : '"SimSun",serif' ) :
-                      (script == "Hans" ? '"SimHei",sans-serif' : '"Calibri",sans-serif' ))
+                      (script == "Hans" ? '"SimHei",sans-serif' : '"Calibri",sans-serif' )),
+          normalfontsize: "1.0em",
+          smallerfontsize: "0.9em",
+          footnotefontsize: "0.9em",
+          monospacefontsize: "0.8em",
         }
       end
 
@@ -34,7 +38,11 @@ module IsoDoc
           bodyfont: options[:bodyfont] || default_font_options[:bodyfont],
           headerfont: options[:headerfont] || default_font_options[:headerfont],
           monospacefont: options[:monospacefont] || default_font_options[:monospacefont],
-          titlefont: options[:titlefont] || default_font_options[:titlefont]
+          titlefont: options[:titlefont] || default_font_options[:titlefont],
+          normalfontsize: options[:normalfontsize] || default_font_options[:normalfontsize],
+          smallerfontsize: options[:smallerfontsize] || default_font_options[:smallerfontsize],
+          footnotefontsize: options[:footnotefontsize] || default_font_options[:footnotefontsize],
+          monospacefontsize: options[:monospacefontsize] || default_font_options[:monospacefontsize],
         }
       end
 
@@ -82,19 +90,22 @@ module IsoDoc
       end
 
       def populate_template(docxml, format)
-        meta = @meta.get.merge(@i18n.get).merge(@meta.fonts_options || {})
+        meta = @meta
+          .get
+          .merge(@i18n.get)
+          .merge(@meta.fonts_options || {})
         logo = @common.format_logo(meta[:gbprefix], meta[:gbscope], format, @localdir)
         logofile = @meta.standard_logo(meta[:gbprefix])
         meta[:standard_agency_formatted] =
           @common.format_agency(meta[:standard_agency], format, @localdir)
         meta[:standard_logo] = logo
         template = liquid(docxml)
-      template.render(meta.map { |k, v| [k.to_s, empty2nil(v)] }.to_h).
-        gsub('&lt;', '&#x3c;').gsub('&gt;', '&#x3e;').gsub('&amp;', '&#x26;')
+        template.render(meta.map { |k, v| [k.to_s, empty2nil(v)] }.to_h)
+          .gsub('&lt;', '&#x3c;').gsub('&gt;', '&#x3e;').gsub('&amp;', '&#x26;')
       end
 
       def make_body(xml, docxml)
-        body_attr = { lang: "EN-US", link: "blue", vlink: "#954F72" }
+        body_attr = { lang: "ZH-CN", link: "blue", vlink: "#954F72" }
         xml.body **body_attr do |body|
           make_body1(body, docxml)
           make_body2(body, docxml)
@@ -103,19 +114,31 @@ module IsoDoc
         end
       end
 
-      def colophon(body, docxml)
-        body.br **{ clear: "all", style: "page-break-before:left;"\
-                    "mso-break-type:section-break" }
-        body.div **{ class: "colophon" } do |div|
-          div.p **{ class: "colophon" }  do |p|
-            p << l10n(@meta.get[:standard_class]) # TODO break up into lines if needed
-          end
-          div.p **{ class: "colophon" }  do |p|
-            p << l10n("#{@meta.get[:docsubtitlezh]}")
-          end
-          div.p **{ class: "colophon" }  do |p|
-            p << l10n("#{@meta.get[:docidentifier]}")
-          end
+      # def convert(input_filename, file = nil, debug = false,
+      #           output_filename = nil)
+      #   file = File.read(input_filename, encoding: "utf-8") if file.nil?
+      #   docxml = Nokogiri::XML(file) { |config| config.huge }
+      #   stage = docxml&.at(ns("//bibdata/status/stage"))&.text
+      #   if @dis &&
+      #       ((/^[4569].$/.match?(stage) && @wordtemplate != "simple") ||
+      #       (/^[0-3].$/.match?(stage) && @wordtemplate == "dis"))
+      #     @dis.convert(input_filename, file, debug, output_filename)
+      #   else
+      #     super
+      #   end
+      # end
+
+      def br(out, pagebreak)
+        out.br clear: "all", style: "page-break-before:#{pagebreak};" \
+                                    "mso-break-type:section-break"
+      end
+
+      def colophon(body, _docxml)
+        stage = @meta.get[:stage_int]
+        return if !stage.nil? && stage < 60
+
+        br(body, "left")
+        body.div class: "colophon" do |div|
         end
       end
 

@@ -7,9 +7,18 @@ module IsoDoc
   module Gb
     # A {Converter} implementation that generates GB output, and a document
     # schema encapsulation of the document for validation
-    class Metadata < IsoDoc::Iso::Metadata
-      def initialize(lang, script, i18n)
+    class Metadata < IsoDoc::Metadata
+=begin
+      def initialize(lang, script, locale, i18n)
         super
+        DATETYPES.each { |w| @metadata["#{w.gsub(/-/, '_')}date".to_sym] = nil }
+        set(:obsoletes, nil)
+        set(:obsoletes_part, nil)
+      end
+=end
+      def initialize(lang, script, locale, i18n)
+        super
+        DATETYPES.each { |w| @metadata["#{w.gsub(/-/, '_')}date".to_sym] = nil }
         set(:docmaintitlezh, "")
         set(:docsubtitlezh, "XXXX")
         set(:docparttitlezh, "")
@@ -40,10 +49,10 @@ module IsoDoc
 
       def set_doctitle
         if @lang == "zh"
-          set(:doctitle, get[:docmaintitlezh] + 
+          set(:doctitle, get[:docmaintitlezh] +
                        get[:docsubtitlezh] + get[:docparttitlezh])
         else
-          set(:doctitle, get[:docmaintitleen] + 
+          set(:doctitle, get[:docmaintitleen] +
                        get[:docsubtitleen] + get[:docparttitleen])
         end
       end
@@ -90,10 +99,9 @@ module IsoDoc
         "95": "obsolete",
       }
 
-      def status_abbrev_cn(stage, _substage, iter, draft, doctype)
-        return status_abbrev(stage, _substage, iter, draft, doctype) if @lang != "zh"
-        stage_num = stage == "PRF" ? "60" : 
-          (Asciidoctor::Gb::Converter::STAGE_ABBRS&.invert[stage]&.to_s || "??")
+      def status_abbrev(stage, _substage, iter, draft, doctype)
+        stage_num = stage == "PRF" ? "60" :
+          (Metanorma::Gb::Converter::STAGE_ABBRS&.invert[stage]&.to_s || "??")
         stage = STAGE_ABBRS_CN[stage_num.to_sym] || "??"
         stage = "#{iter.to_i.localize(:zh).spellout.force_encoding("UTF-8")}次#{stage}" if iter
         stage = "Pre" + HTMLEntities.new.encode(stage, :hexadecimal) if draft =~ /^0\./
@@ -102,19 +110,25 @@ module IsoDoc
 
       def docstatus(isoxml, _out)
         docstatus = isoxml.at(ns("//bibdata/status/stage"))
-        set(:unpublished, true)
-        if docstatus
-          set(:stage, docstatus.text.to_i)
-          set(:unpublished, unpublished(docstatus.text))
-          set(:statusabbr, status_abbrev_cn(docstatus["abbreviation"],
-                                            isoxml&.at(ns("//bibdata/status/substage"))&.text,
-                                            isoxml&.at(ns("//bibdata/status/iteration"))&.text,
-                                            isoxml&.at(ns("//version/draft"))&.text,
-                                            isoxml&.at(ns("//bibdata/ext/doctype"))&.text))
-          set(:status, STATUS_CSS[docstatus.text.to_sym])
-          unpublished(docstatus.text) and
-            set(:stageabbr, docstatus["abbreviation"])
-        end
+        set(:unpublished, false)
+        revdate = isoxml.at(ns("//bibdata/version/revision-date"))
+        set(:revdate, revdate&.text)
+        docstatus and docstatus1(isoxml, docstatus)
+      end
+
+      def docstatus1(isoxml, docstatus)
+        set(:stage, docstatus.text)
+        set(:stage_int, docstatus.text.to_i)
+        set(:substage_int, isoxml.at(ns("//bibdata/status/substage"))&.text)
+        set(:unpublished, unpublished(docstatus.text))
+        set(:statusabbr,
+          status_abbrev(docstatus["abbreviation"] || "??",
+                          isoxml.at(ns("//bibdata/status/substage"))&.text,
+                          isoxml.at(ns("//bibdata/status/iteration"))&.text,
+                          isoxml.at(ns("//bibdata/version/draft"))&.text,
+                          isoxml.at(ns("//bibdata/ext/doctype"))&.text))
+        unpublished(docstatus.text) and
+          set(:stageabbr, docstatus["abbreviation"])
       end
 
       def unpublished(status)
@@ -135,7 +149,6 @@ module IsoDoc
 
       ISO_STD_XPATH = "//bibdata/relation[xmlns:description[text() = 'equivalent' or "\
         "text() = 'identical' or text() = 'nonequivalent']]/bibitem".freeze
-
       def gb_equivalence(isoxml)
         isostdid = isoxml.at(ns("#{ISO_STD_XPATH}/docidentifier")) || return
         set(:isostandard, isostdid.text)
@@ -173,7 +186,7 @@ module IsoDoc
           set(:gblocalcode, prefix)
         else
           set(:gbprefix, prefix)
-        end 
+        end
         set(:gbscope, scope)
       end
 
@@ -190,9 +203,12 @@ module IsoDoc
       end
 
       def gb_library_identifier(isoxml)
+        ics = []
+        isoxml.xpath(ns("//bibdata/ext/ics/code")).each { |i| ics << i.text }
         ccs = []
         isoxml.xpath(ns("//bibdata/ext/ccs")).each { |i| ccs << i.text }
         p = isoxml.at(ns("//bibdata/ext/plannumber"))
+        set(:libraryid_ics, ics.empty? ? "XXX" : ics.join(", "))
         set(:libraryid_ccs, ccs.empty? ? "XXX" : ccs.join(", "))
         set(:libraryid_plan, p ? p.text : "XXX")
       end
