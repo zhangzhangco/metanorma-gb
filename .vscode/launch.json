@@ -1,0 +1,79 @@
+{
+    // 使用 IntelliSense 了解相关属性。
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run RSpec - all",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/bin/rspec",
+            "args": [
+              "--pattern",
+              "${workspaceRoot}/spec/**/*_spec.rb"
+            ]
+          },
+          {
+            "name": "Debug RSpec ISO - open spec file",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}/../metanorma-iso/",
+            "useBundler": true,
+            "pathToBundler": "/Users/vfx5/.rbenv/shims/bundle",
+            "pathToRDebugIDE": "/Users/vfx5/.rbenv/shims/rdebug-ide",
+            "debuggerPort": "1235",
+            "program": "${workspaceRoot}/../metanorma-iso/bin/rspec",
+            "args": [
+              "${file}"
+            ]
+          },
+          {
+            "name": "Debug RSpec - open spec file",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "useBundler": true,
+            "pathToBundler": "/Users/vfx5/.rbenv/shims/bundle",
+            "pathToRDebugIDE": "/Users/vfx5/.rbenv/shims/rdebug-ide",
+            "debuggerPort": "1235",
+            "program": "${workspaceRoot}/bin/rspec",
+            "args": [
+              "${file}"
+            ]
+          },
+        // {
+        //     "name": "RSpec - active spec file only",
+        //     "type": "Ruby",
+        //     "request": "launch",
+        //     "program": "${workspaceRoot}/bin/rspec",
+        //     "args": [
+        //         "-I",
+        //         "${workspaceRoot}",
+        //         "${file}"
+        //     ]
+        // },
+        {
+            "type": "rdbg",
+            "name": "Debug current file with rdbg",
+            "request": "launch",
+            "script": "${file}",
+            "args": [],
+            "askParameters": true
+        },
+        {
+            "type": "rdbg",
+            "name": "Attach with rdbg",
+            "request": "attach"
+        },
+        {
+            "type": "rdbg",
+            "name": "GB Debug current file with rdbg",
+            "request": "launch",
+            "script": "${workspaceFolder}/../metanorma-cli/exe/metanorma", // launch metanorma with debugger
+            "args": ["--type gb /Users/vfx5/metanorma-gb/spec/examples/gb/document.adoc"],
+            "askParameters": false
+        }
+    ]
+}
