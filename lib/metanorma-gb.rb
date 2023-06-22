@@ -1,4 +1,5 @@
 require "asciidoctor" unless defined? Asciidoctor::Converter
+require "metanorma-iso"
 require_relative "metanorma/gb/converter"
 require_relative "metanorma/gb/version"
 require_relative "isodoc/gb/common"
