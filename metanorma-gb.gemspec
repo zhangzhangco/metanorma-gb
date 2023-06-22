@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
 
-  spec.add_dependency "metanorma-iso"
+  spec.add_dependency "metanorma-iso", "~> 2.4.5"
   spec.add_dependency "isodoc"
   spec.add_dependency "twitter_cldr"
   spec.add_dependency "gb-agencies"
@@ -53,5 +53,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock"
   spec.add_development_dependency "materialize"
   spec.add_development_dependency "ruby-debug-ide"
-  spec.add_development_dependency "debase"
+  spec.add_development_dependency "debase", "=0.2.5.beta2"
 end
