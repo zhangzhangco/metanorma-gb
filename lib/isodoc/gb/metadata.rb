@@ -19,6 +19,7 @@ module IsoDoc
       def initialize(lang, script, locale, i18n)
         super
         DATETYPES.each { |w| @metadata["#{w.gsub(/-/, '_')}date".to_sym] = nil }
+        set(:docnumber, "XXXX")
         set(:docmaintitlezh, "")
         set(:docsubtitlezh, "XXXX")
         set(:docparttitlezh, "")
@@ -31,8 +32,6 @@ module IsoDoc
         set(:doctitle, "XXXX")
         set(:obsoletes, nil)
         set(:obsoletes_part, nil)
-        set(:publisheddate, "XXX")
-        set(:implementeddate, "XXX")
       end
 
       def title(isoxml, _out)
@@ -170,14 +169,16 @@ module IsoDoc
       end
 
       def gb_identifier(isoxml)
+        docnumber = isoxml.at(ns("//bibdata/docnumber"))&.text || "XXXX"
         scope = isoxml.at(ns("//bibdata/ext/gbtype/gbscope"))&.text || "national"
         mandate = isoxml.at(ns("//bibdata/ext/gbtype/gbmandate"))&.text || "mandatory"
         prefix = isoxml.at(ns("//bibdata/ext/gbtype/gbprefix"))&.text || "XXX"
-        docyear = isoxml&.at(ns("//bibdata/copyright/from"))&.text
+        docyear = isoxml&.at(ns("//bibdata/copyright/from"))&.text || "XXXX"
         issuer = isoxml&.at(ns("//bibdata/contributor[role/@type = 'issuer']/"\
                                "organization/name"))&.text || "GB"
         @agencies = GbAgencies::Agencies.new(@lang, @labels, issuer)
-        set(:docidentifier, get[:docnumber])
+        set(:docidentifier, (issuer + (('/T ' unless mandate == 'mandatory') || ' ') + docnumber) + '—'+ docyear )
+        #set(:docidentifier, (prefix + ' ' + get[:docnumber]) + '—'+ docyear )
         set(:issuer, issuer)
         set(:standard_class, standard_class(scope, prefix, mandate))
         set(:standard_agency, @agencies.standard_agency(scope, prefix, mandate))
@@ -224,9 +225,11 @@ module IsoDoc
         super
         m = get
         if @lang == "zh"
-          set(:labelled_publisheddate, m[:publisheddate] + " " +
+          m[:publisheddate] = "XXXX-XX-XX" if m[:publisheddate].empty?
+          m[:implementeddate] = "XXXX-XX-XX" if m[:implementeddate].empty?
+          set(:labelled_publisheddate, m[:publisheddate].gsub("-", " - ") + " " +
               (@labels["publicationdate_lbl"] || ""))
-          set(:labelled_implementeddate, m[:implementeddate] + " " +
+          set(:labelled_implementeddate, m[:implementeddate].gsub("-", " - ")  + " " +
               (@labels["implementationdate_lbl"] || ""))
         else
           set(:labelled_publisheddate, (@labels["publicationdate_lbl"] || "") +

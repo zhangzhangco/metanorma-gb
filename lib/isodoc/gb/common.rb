@@ -25,9 +25,9 @@ module IsoDoc
         return "<img class='logo' src='#{@standardissuerimg}' alt='#{agency.join(",")}'></img>" if @standardissuerimg
         return agency unless agency.is_a?(Array)
         if agency == ["中华人民共和国国家质量监督检验检疫总局", "中国国家标准化管理委员会"]
-          logo = "gb-issuer-default.gif"
+          logo = "gb-issuer-footer.png"
           #FileUtils.cp fileloc(File.join('html/gb-logos', logo)), logo
-          return "<img class='logo' src='#{fileloc(File.join('html/gb-logos', logo))}' alt='#{agency.join(",")}'></img>"
+          return "<img class='logo' src='#{fileloc(File.join('html/gb-logos', logo))}' alt='#{agency.join(",")}' width='301' height='57'></img>"
         end
         format_agency1(agency, format)
       end
@@ -59,12 +59,12 @@ module IsoDoc
 
       def format_logo1(logo, prefix, scope, localdir)
         local = local_logo_suffix(scope)
-        return "<img class='logo' width='113' height='56' src='#{@standardlogoimg}' alt='#{prefix}'></img>"\
+        return "<img class='logo' width='152' height='77' src='#{@standardlogoimg}' alt='#{prefix}'></img>"\
           "#{local}" if  @standardlogoimg
         logo += ".png"
         #FileUtils.cp fileloc(File.join('html/gb-logos', logo)), logo
         #@files_to_delete << logo
-        "<img class='logo' width='113' height='56' src='#{fileloc(File.join('html/gb-logos', logo))}' alt='#{prefix}'></img>"\
+        "<img class='logo' width='152' height='77' src='#{fileloc(File.join('html/gb-logos', logo))}' alt='#{prefix}'></img>"\
           "#{local}"
       end
     end

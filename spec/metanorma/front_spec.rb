@@ -7,15 +7,14 @@ RSpec.describe Metanorma::Gb do
       :docfile: test.adoc
       :novalid:
       :no-isobib:
-      :mandate: mandatory
+      :mandate: recommended
       :library-ics: 11.060
       :library-ccs: N40
       :library-plan: 备案号
       :scope: national
       :prefix: GB
-      :docnumber: 123
-      :obsoletes: GB/T 123-1995
-      :copyright-year: 2023
+      :docnumber:
+      :obsoletes: GB/T 123—1995
       :title-intro-zh: 数字电影
       :title-main-zh: LED影厅
       :title-part-zh: 技术要求和测量方法
@@ -24,15 +23,17 @@ RSpec.describe Metanorma::Gb do
       :title-part-en: Technical requirements and test methods
       :adoption-type: nonequivalent
       :adoption-title: ISO/IEC 1234:2001,LED Standard
-      :published-date: 2024-01-01
-      :implemented-date: 2024-03-01
-      :issuer: 发布机构
+      :revdate: 2023-05-01
+      :docstage: 30
+      :published-date:
+      :implemented-date:
+      :issuer:
       :technical-committee-type: TC
       :technical-committee-number: 586
       :technical-committee: 全国电影标准化技术专业委员会
-      :proposer: 提出单位
-      :author: 李娜,董强国,刘知一,张伟,龚波,高五峰,高峰,高峰,张辉,王景宇,贾波,周永业,董志刚,张鹏昊,张硕
-      :imagesdir: 图片所在目录
+      :proposer: 提出单位1,提出单位2
+      :author: 李娜,董强国,刘知一
+      #:standard-issuer-img: lib/isodoc/gb/html/footer.png
     INPUT
     output = <<~OUTPUT
     <?xml version="1.0" encoding="UTF-8"?>
@@ -62,23 +63,30 @@ RSpec.describe Metanorma::Gb do
             <title format="plain" language="zh" type="title-part">
                 技术要求和测量方法
             </title>
-            <docidentifier type="gb">
-                123
-            </docidentifier>
-            <docnumber>
-                123
-            </docnumber>
-            <date type="published">
-                <on>
-                    2024-01-01
-                </on>
-            </date>
             <contributor>
                 <role type="author">
                 </role>
                 <person>
                     <name>
-                        李娜,董强国,刘知一,张伟,龚波,高五峰,高峰,高峰,张辉,王景宇,贾波,周永业,董志刚,张鹏昊,张硕
+                        李娜
+                    </name>
+                </person>
+            </contributor>
+            <contributor>
+                <role type="author">
+                </role>
+                <person>
+                    <name>
+                        董强国
+                    </name>
+                </person>
+            </contributor>
+            <contributor>
+                <role type="author">
+                </role>
+                <person>
+                    <name>
+                        刘知一
                     </name>
                 </person>
             </contributor>
@@ -87,10 +95,24 @@ RSpec.describe Metanorma::Gb do
                 </role>
                 <organization>
                     <name>
-                        提出单位
+                        提出单位1
                     </name>
                 </organization>
             </contributor>
+            <contributor>
+                <role type="proposer">
+                </role>
+                <organization>
+                    <name>
+                        提出单位2
+                    </name>
+                </organization>
+            </contributor>
+            <version>
+                <revision-date>
+                    2023-05-01
+                </revision-date>
+            </version>
             <language>
                 zh
             </language>
@@ -98,17 +120,14 @@ RSpec.describe Metanorma::Gb do
                 Hans
             </script>
             <status>
-                <stage>
-                    60
+                <stage abbreviation="CD">
+                    30
                 </stage>
                 <substage>
-                    60
+                    00
                 </substage>
             </status>
             <copyright>
-                <from>
-                    2023
-                </from>
                 <owner>
                     <organization>
                         <name>
@@ -119,14 +138,24 @@ RSpec.describe Metanorma::Gb do
             </copyright>
             <relation type="adoptedFrom">
                 <description>
-                    NEQ
+                    nonequivalent
                 </description>
+                <bibitem>
+                    <title>
+                        LED Standard
+                    </title>
+                    <docidentifier>
+                        ISO/IEC 1234:2001
+                    </docidentifier>
+                </bibitem>
+            </relation>
+            <relation type="obsoletes">
                 <bibitem>
                     <title>
                         [not supplied]
                     </title>
                     <docidentifier>
-                        ISO/IEC LED Standard
+                        GB/T 123—1995
                     </docidentifier>
                 </bibitem>
             </relation>
@@ -151,23 +180,18 @@ RSpec.describe Metanorma::Gb do
                 <plannumber>
                     备案号
                 </plannumber>
-                <structuredidentifier>
-                    <project-number>
-                        123
-                    </project-number>
-                </structuredidentifier>
                 <stagename>
-                    现行标准
+                    标准草案征求意见稿
                 </stagename>
                 <gbtype>
                     <gbscope>
-                        国家
+                        national
                     </gbscope>
                     <gbprefix>
                         GB
                     </gbprefix>
                     <gbmandate>
-                        推荐性
+                        recommended
                     </gbmandate>
                     <gbtopic>
                         basic

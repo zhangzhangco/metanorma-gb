@@ -38,6 +38,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "htmlentities"
   spec.add_dependency "asciidoctor"
 
+  spec.add_development_dependency "debug"
   spec.add_development_dependency "byebug"
   spec.add_development_dependency "sassc"
   spec.add_development_dependency "equivalent-xml"

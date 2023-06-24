@@ -63,8 +63,8 @@ module Metanorma
                                      nil, false, "#{@filename}.html")
         doc_converter(node).convert(@filename + ".presentation.xml",
                                     nil, false, "#{@filename}.doc")
-        # pdf_converter(node)&.convert(@filename + ".presentation.xml",
-        #                              nil, false, "#{@filename}.pdf")
+        #pdf_converter(node)&.convert(@filename + ".presentation.xml",
+        #                             nil, false, "#{@filename}.pdf")
       end
     end
   end
