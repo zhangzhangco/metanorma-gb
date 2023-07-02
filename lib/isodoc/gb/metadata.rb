@@ -225,8 +225,8 @@ module IsoDoc
         super
         m = get
         if @lang == "zh"
-          m[:publisheddate] = "XXXX-XX-XX" if m[:publisheddate].empty?
-          m[:implementeddate] = "XXXX-XX-XX" if m[:implementeddate].empty?
+          m[:publisheddate] = "XXXX-XX-XX" if m[:publisheddate].nil? || m[:publisheddate].empty?
+          m[:implementeddate] = "XXXX-XX-XX" if m[:implementeddate].nil? || m[:implementeddate].empty?
           set(:labelled_publisheddate, m[:publisheddate].gsub("-", " - ") + " " +
               (@labels["publicationdate_lbl"] || ""))
           set(:labelled_implementeddate, m[:implementeddate].gsub("-", " - ")  + " " +

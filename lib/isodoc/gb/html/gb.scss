@@ -31,23 +31,47 @@ p.standard_class, li.standard_class, div.standard_class {
   mso-font-width: 148%;
   font-weight: bold;
 }
-p.a2, li.a2, div.a2 {
-  mso-style-name: 标准文件_页脚奇数页;
-  mso-style-unhide: no;
-  mso-style-parent: "";
-  margin-top: 0cm;
-  margin-right: 11.35pt;
-  margin-bottom: 0cm;
-  margin-left: 0cm;
-  text-align: right;
-  mso-pagination: widow-orphan;
-  font-size: 9.0pt;
-  mso-bidi-font-size: 10.0pt;
-  font-family: 宋体;
-  mso-hansi-font-family: "Times New Roman";
-  mso-bidi-font-family: "Times New Roman";
+p.jf, li.jf, div.jf {
+  mso-style-name:标准文件_页脚奇数页;
+  mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-parent:"";
+  margin-top:0cm;
+  margin-right:11.35pt;
+  margin-bottom:0cm;
+  margin-left:0cm;
+  text-align:right;
+  line-height:normal;
+  mso-pagination:widow-orphan;
+  mso-layout-grid-align:auto;
+  font-size:9.0pt;
+  mso-bidi-font-size:10.0pt;
+  font-family:宋体;
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-font-kerning:0pt;
 }
-p.a3, li.a3, div.a3 {
+p.f0, li.f0, div.f0 {
+  mso-style-name:标准文件_页脚偶数页;
+  mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-parent:"";
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:0cm;
+  margin-left:9.9pt;
+  text-align:left;
+  line-height:normal;
+  mso-pagination:widow-orphan;
+  mso-layout-grid-align:auto;
+  font-size:9.0pt;
+  mso-bidi-font-size:10.0pt;
+  font-family:宋体;
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-font-kerning:0pt;
+}
+p.af, li.af, div.af {
   mso-style-name: 标准文件_页眉奇数页;
   mso-style-unhide: no;
   mso-style-parent: "";
@@ -66,6 +90,27 @@ p.a3, li.a3, div.a3 {
   mso-bidi-font-family: "Times New Roman";
   mso-no-proof: yes;
 }
+p.af0, li.af0, div.af0
+  {mso-style-name:标准文件_页眉偶数页;
+  mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-parent:标准文件_页眉奇数页;
+  mso-style-next:正文;
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:6.0pt;
+  margin-left:0cm;
+  text-align:left;
+  line-height:normal;
+  mso-pagination:widow-orphan;
+  tab-stops:center 207.7pt right 415.3pt;
+  mso-layout-grid-align:auto;
+  font-size:10.5pt;
+  mso-bidi-font-size:10.0pt;
+  font-family:黑体;
+  mso-hansi-font-family:宋体;
+  mso-bidi-font-family:"Times New Roman";
+  mso-font-kerning:0pt;}
 p.a4, li.a4, div.a4 {
   mso-style-name: 标准文件_段;
   mso-style-unhide: no;
@@ -481,6 +526,87 @@ p.standard_number, li.standard_number, div.standard_number {
   mso-bidi-font-family: "Times New Roman";
   mso-bidi-font-weight: bold;
   mso-no-proof: yes;
+}
+p.affb, li.affb, div.affb {
+  mso-style-name:标准文件_前言、引言标题;
+  mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-parent:"";
+  mso-style-next:正文;
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:7.5pt;
+  margin-left:0cm;
+  mso-para-margin-top:0cm;
+  mso-para-margin-right:0cm;
+  mso-para-margin-bottom:1.5gd;
+  mso-para-margin-left:0cm;
+  text-align:center;
+  text-indent:0cm;
+  line-height:normal;
+  mso-pagination:widow-orphan;
+  mso-outline-level:1;
+  mso-list:l4 level1 lfo8;
+  background:white;
+  mso-layout-grid-align:auto;
+  font-size:16.0pt;
+  mso-bidi-font-size:10.0pt;
+  font-family:黑体;
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-font-kerning:0pt;
+}
+p.ForewordTitle, li.ForewordTitle, div.ForewordTitle {
+  mso-style-name:标准文件_前言、引言标题;
+  mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-parent:"";
+  mso-style-next:正文;
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:7.5pt;
+  margin-left:0cm;
+  mso-para-margin-top:0cm;
+  mso-para-margin-right:0cm;
+  mso-para-margin-bottom:1.5gd;
+  mso-para-margin-left:0cm;
+  text-align:center;
+  text-indent:0cm;
+  line-height:normal;
+  mso-pagination:widow-orphan;
+  mso-outline-level:1;
+  mso-list:l4 level1 lfo8;
+  background:white;
+  mso-layout-grid-align:auto;
+  font-size:16.0pt;
+  mso-bidi-font-size:10.0pt;
+  font-family:黑体;
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-font-kerning:0pt;
+}
+p.zzContents, li.zzContents, div.zzContents{
+  mso-style-name:标准文件_目录标题;
+  mso-style-unhide:no;
+  mso-style-qformat:yes;
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:7.5pt;
+  margin-left:0cm;
+  mso-para-margin-top:0cm;
+  mso-para-margin-right:0cm;
+  mso-para-margin-bottom:1.5gd;
+  mso-para-margin-left:0cm;
+  text-align:center;
+  line-height:normal;
+  mso-pagination:none;
+  mso-layout-grid-align:none;
+  font-size:16.0pt;
+  mso-bidi-font-size:10.5pt;
+  font-family:黑体;
+  mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:"Times New Roman";
+  mso-font-kerning:1.0pt;
 }
 p.supercedes_container, li.supercedes_container, div.supercedes_container {
   mso-style-name: 标准文件_替换文件编号;

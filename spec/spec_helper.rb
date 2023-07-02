@@ -127,9 +127,6 @@ VALIDATING_BLANK_HDR = <<~"HDR".freeze
 
 HDR
 
-BOILERPLATE = <<~"END".freeze
-<boilerplate/>
-END
 
 BLANK_HDR1 = <<~"HDR".freeze
 <?xml version="1.0" encoding="UTF-8"?>
@@ -187,7 +184,6 @@ HDR
 
 BLANK_HDR = <<~"HDR".freeze
   #{BLANK_HDR1}
-  #{BOILERPLATE}
 HDR
 
 HTML_HDR = <<~HDR.freeze

@@ -13,7 +13,7 @@ module Metanorma
         issuer_validate(doc.root)
         prefix_validate(doc.root)
         bibdata_validate(doc.root)
-        @agencyclass.gbtype_validate(doc.root.at("//gbscope")&.text, doc.root.at("//gbprefix")&.text)
+        #@agencyclass.gbtype_validate(doc.root.at("//gbscope")&.text, doc.root.at("//gbprefix")&.text)
       end
 
       def bibdata_validate(doc)
